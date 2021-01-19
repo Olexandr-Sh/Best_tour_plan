@@ -1,0 +1,12 @@
+.container {
+  max-width: map-get($map: $container-width, $key: xs);
+  @include media-breakpoint-up(sm) {
+    max-width: map-get($map: $container-width, $key: sm);
+  }
+  @include media-breakpoint-up(md) {
+    max-width: map-get($map: $container-width, $key: md);
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: map-get($map: $container-width, $key: lg);
+  }
+}
