@@ -3,8 +3,3 @@
     @content;
   }
 }
-
-.title {
-  font-size: 32px;
-  @include media-breakpoint-up(sm);
-}
