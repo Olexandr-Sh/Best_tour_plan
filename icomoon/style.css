@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.woff?cb1cjx") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-calendar-icon:before {
+  content: "\e905";
+}
+.icon-check-icon:before {
+  content: "\e906";
+}
+.icon-chevron-down:before {
+  content: "\e907";
+}
+.icon-chevrone-right:before {
+  content: "\e908";
+}
+.icon-chevron-left:before {
+  content: "\e909";
+}
+.icon-e-mail-icon:before {
+  content: "\e90a";
+}
+.icon-facebook-icon1:before {
+  content: "\e90b";
+}
+.icon-gift-card:before {
+  content: "\e90c";
+}
+.icon-golden-star:before {
+  content: "\e90d";
+}
+.icon-home-icon:before {
+  content: "\e90e";
+}
+.icon-instagram-icon1:before {
+  content: "\e90f";
+}
+.icon-location-icon:before {
+  content: "\e910";
+}
+.icon-loyalty-program-star:before {
+  content: "\e911";
+}
+.icon-map-pin-icon:before {
+  content: "\e912";
+}
+.icon-phone-call-footer-icon:before {
+  content: "\e913";
+}
+.icon-phone-call-icon:before {
+  content: "\e914";
+}
+.icon-search-icon:before {
+  content: "\e915";
+}
+.icon-shopping-cart-icon:before {
+  content: "\e916";
+}
+.icon-user-icon:before {
+  content: "\e917";
+}
+.icon-youtube-icon1:before {
+  content: "\e918";
+}
+.icon-facebook-icon:before {
+  content: "\e900";
+}
+.icon-instagram-icon:before {
+  content: "\e901";
+}
+.icon-pinterest-icon:before {
+  content: "\e902";
+}
+.icon-twitter-icon:before {
+  content: "\e903";
+}
+.icon-youtube-icon:before {
+  content: "\e904";
+}
