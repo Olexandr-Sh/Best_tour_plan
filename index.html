@@ -13,7 +13,6 @@
       content="travel, hotels, restaurants, events, luxury, star, trip, discover"
     />
     <title>BestTourPlan</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&display=swap"
       rel="stylesheet"
@@ -23,19 +22,25 @@
   <body class="common">
     <header>
       <div class="container">
-        <div class="col d-flex flex-column">
-          <div class="header-top">
-            <span class="header-top-text"
-              ><b>Questions? Need Help?</b> Call us on (+123) 456 1500</span
-            >
+        <div class="row">
+          <div class="header-top col-12">
+            <div class="header-top-text">
+              <span class="header-top-text-1">Questions? Need Help?</span>
+              <span class="header-top-text-2"
+                >Call us on
+                <a href="tel:+1234561500" class="header-top-tel-link"
+                  >(+123) 456 1500</a
+                ></span
+              >
+            </div>
             <ul class="header-top-list">
               <li class="header-top-list__item">
-                <span class="icon-gift-card"></span>
-                <p class="header-top-list__text">BTP Gift Card</p>
+                <span class="icon-gift-card header-icons"></span>
+                <a href="#" class="header-top-list__text">BTP Gift Card</a>
               </li>
               <li class="header-top-list__item">
-                <span class="icon-loyalty-program-star"></span>
-                <p class="header-top-list__text">Loyalty Program</p>
+                <span class="icon-loyalty-program-star header-icons"></span>
+                <a href="#" class="header-top-list__text">Loyalty Program</a>
               </li>
             </ul>
           </div>
@@ -55,6 +60,13 @@
                 name="search_location"
                 placeholder="Search Location"
               />
+              <datalist id="search_location">
+                <option value="Київ"></option>
+                <option value="Дніпро"></option>
+                <option value="Львів"></option>
+                <option value="Одеса"></option>
+                <option value="Харків"></option>
+              </datalist>
               <button class="search-button">
                 <span class="icon-search-icon"></span>
               </button>

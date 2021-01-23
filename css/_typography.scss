@@ -1,3 +1,30 @@
+.header-top-text {
+  color: $tcolor-1;
+  font-size: 14px;
+  line-height: 18px;
+}
+.header-top-text-1 {
+  font-weight: 700;
+}
+.header-top-text-2 {
+  font-weight: 400;
+}
+.header-top-tel-link {
+  color: $tcolor-1;
+}
+.header-top-list__text {
+  color: $tcolor-1;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+@include media-breakpoint-up(lg) {
+  .header-top-text,
+  .header-top-list__text {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
 .title {
   color: $prime-color;
   background: $second-color;
