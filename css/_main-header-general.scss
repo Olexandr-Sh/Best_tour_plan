@@ -13,7 +13,7 @@
 }
 .search-form__input {
   height: 40px;
-  width: 80%;
+  width: 180px;
   background: $bkg-color-1;
   border-radius: 6px;
   padding-left: 12px;
@@ -74,6 +74,23 @@
   align-items: center;
   position: relative;
 }
+.user-avatar:hover {
+  outline: none;
+  background-color: $bkg-color-1;
+  border-radius: 12px;
+}
+.user-avatar:focus {
+  outline: none;
+  background-color: $bkg-color-1;
+  border-radius: 12px;
+}
+.user-avatar:active {
+  outline: none;
+  background-color: $bkg-tcolor-2;
+}
+.user-avatar__photo {
+  border-radius: 50%;
+}
 .user-avatar__name {
   padding-left: 18px;
   padding-right: 24px;
@@ -82,4 +99,44 @@
   position: absolute;
   left: 90%;
   top: 44%;
+}
+@include media-breakpoint-up(sm) {
+  .user-wraper__info {
+    padding-left: 64px;
+  }
+  .user-wraper__info:first-child {
+    padding-left: 0;
+  }
+  .user-avatar {
+    padding-right: 20px;
+  }
+  .search-form__input {
+    padding-left: 24px;
+    width: 240px;
+  }
+}
+@include media-breakpoint-up(md) {
+  .search-form__input {
+    width: 284px;
+  }
+  .search-form__button {
+    width: 66px;
+  }
+  .search-form {
+    padding: 20px 0;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .header-general {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+  .search-form {
+    padding: 0;
+  }
+  .user-avatar__icon {
+    left: 86%;
+    font-size: 14px;
+  }
 }

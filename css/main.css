@@ -2263,7 +2263,7 @@ button {
 
 .search-form__input {
   height: 40px;
-  width: 80%;
+  width: 180px;
   background: #f5fafe;
   border-radius: 6px;
   padding-left: 12px;
@@ -2355,6 +2355,27 @@ button {
   position: relative;
 }
 
+.user-avatar:hover {
+  outline: none;
+  background-color: #f5fafe;
+  border-radius: 12px;
+}
+
+.user-avatar:focus {
+  outline: none;
+  background-color: #f5fafe;
+  border-radius: 12px;
+}
+
+.user-avatar:active {
+  outline: none;
+  background-color: #fff;
+}
+
+.user-avatar__photo {
+  border-radius: 50%;
+}
+
 .user-avatar__name {
   padding-left: 18px;
   padding-right: 24px;
@@ -2364,5 +2385,53 @@ button {
   position: absolute;
   left: 90%;
   top: 44%;
+}
+
+@media (min-width: 576px) {
+  .user-wraper__info {
+    padding-left: 64px;
+  }
+  .user-wraper__info:first-child {
+    padding-left: 0;
+  }
+  .user-avatar {
+    padding-right: 20px;
+  }
+  .search-form__input {
+    padding-left: 24px;
+    width: 240px;
+  }
+}
+
+@media (min-width: 768px) {
+  .search-form__input {
+    width: 284px;
+  }
+  .search-form__button {
+    width: 66px;
+  }
+  .search-form {
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-general {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 40px 0;
+  }
+  .search-form {
+    padding: 0;
+  }
+  .user-avatar__icon {
+    left: 86%;
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
