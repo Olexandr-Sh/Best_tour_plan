@@ -1,0 +1,20 @@
+.main-header-general {
+  background-color: $bkg-tcolor-2;
+}
+.header-general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+}
+.search-form {
+  padding: 10px 0;
+}
+.search-form__input {
+  height: 40px;
+  background: $bkg-color-1;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}

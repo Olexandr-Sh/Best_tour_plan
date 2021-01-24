@@ -20,68 +20,123 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body class="common">
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="header-top col-12">
-            <div class="header-top-text">
-              <span class="header-top-text-1">Questions? Need Help?</span>
-              <span class="header-top-text-2"
-                >Call us on
-                <a href="tel:+1234561500" class="header-top-tel-link"
-                  >(+123) 456 1500</a
-                ></span
-              >
+    <header class="main-header">
+      <div class="main-header-info">
+        <div class="container">
+          <div class="header-info">
+            <div class="header-info__text">
+              <span class="header-info__text-1">Questions? Need Help?</span>
+              <span class="header-info__text-2">
+                <a href="tel:+1234561500" class="header-info__link"
+                  >Call us on (+123) 456 1500
+                </a>
+              </span>
             </div>
-            <ul class="header-top-list">
-              <li class="header-top-list__item">
-                <span class="icon-gift-card header-icons"></span>
-                <a href="#" class="header-top-list__text">BTP Gift Card</a>
+            <ul class="header-info-list">
+              <li class="header-info-list__item">
+                <a href="#" class="header-info-list__link">
+                  <span class="icon-gift-card header-icons"></span>
+                  BTP Gift Card
+                </a>
               </li>
-              <li class="header-top-list__item">
-                <span class="icon-loyalty-program-star header-icons"></span>
-                <a href="#" class="header-top-list__text">Loyalty Program</a>
+              <li class="header-info-list__item">
+                <a href="#" class="header-info-list__link">
+                  <span class="icon-loyalty-program-star header-icons"></span>
+                  Loyalty Program
+                </a>
               </li>
             </ul>
           </div>
-          <div class="sign-up">
-            <a href="#" class="page-logo">
-              <img
-                src="./images/best_tour_plan_logo/best_tour_plan.svg"
-                alt="best-tour-plan-logo"
-              />
-            </a>
-            <form class="search-form">
-              <input
-                class="input"
-                type="text"
-                list="search_location"
-                id="search_location"
-                name="search_location"
-                placeholder="Search Location"
-              />
-              <datalist id="search_location">
-                <option value="Київ"></option>
-                <option value="Дніпро"></option>
-                <option value="Львів"></option>
-                <option value="Одеса"></option>
-                <option value="Харків"></option>
-              </datalist>
-              <button class="search-button">
-                <span class="icon-search-icon"></span>
-              </button>
-            </form>
-            <div>
-              <span class="icon-shopping-cart-icon"></span>
-              <div>
-                <p>2</p>
-              </div>
-            </div>
-          </div>
-          <div class="header-nav"></div>
         </div>
       </div>
+      <div class="main-header-general">
+        <div class="container">
+          <div class="header-general">
+            <div class="col-xl-3">
+              <a href="#" class="page-logo">
+                <img
+                  src="./images/best_tour_plan_logo/best_tour_plan.svg"
+                  alt="best-tour-plan-logo"
+                />
+              </a>
+            </div>
+            <div class="col-xl-4">
+              <form class="search-form">
+                <input
+                  class="search-form__input"
+                  type="text"
+                  placeholder="Search Location"
+                  aria-label="search-location"
+                />
+                <button class="search-form__button" aria-label="search">
+                  <span
+                    class="icon-search-icon search-form__button-icon"
+                  ></span>
+                </button>
+              </form>
+            </div>
+            <div class="col-xl-1 offset-xl-2">
+              <a href="#" class="user-cart" aria-label="user cart">
+                <span class="icon-shopping-cart-icon"></span>
+                <span class="user-cart__count">>2</span>
+              </a>
+            </div>
+            <div class="col-xl-2">
+              <button class="user-avatar">
+                <img
+                  src="./images/nathan_photo/nathan_40x40_1x.jpg"
+                  alt="nathan avatar"
+                />
+                <span class="user-avatar__name">Nathan</span>
+                <span class="icon-chevron-down"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-nav"></div>
     </header>
+    <section class="tabs-section">
+      <div class="container">
+        <ul class="main-tabs">
+          <li class="main-tabs__list-item">
+            <button class="main-tabs__item main-tabs__item--active">
+              Package Summary
+            </button>
+          </li>
+          <li class="main-tabs__list-item">
+            <button class="main-tabs__item">Package Summary</button>
+          </li>
+        </ul>
+        <div class="main-tab">
+          <h2 class="subtitle main-tab__title">Package Summary</h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="info-card">
+                <div class="info-card__header">
+                  <h3 class="info-card__title">Package Highlights</h3>
+                </div>
+              </div>
+              <ul class="plain-list">
+                <li class="plain-list__item">
+                  <span class="plain-list__icon">
+                    <span class="icon-check"></span>
+                  </span>
+                  Half Board
+                </li>
+                <li class="plain-list__item">
+                  <span class="plain-list__icon">
+                    <span class="icon-check"></span>
+                  </span>
+                  Half Board
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6"></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
