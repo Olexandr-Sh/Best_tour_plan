@@ -1,11 +1,18 @@
-.main-btn {
-  background-color: $prime-color;
-}
 .search-form__button {
   width: 36px;
   height: 40px;
   background-color: $prime-color;
   border-radius: 0px 6px 6px 0px;
-  border: none;
+  outline: none;
+}
+.search-form__button:hover {
+  background-color: $second-color;
+  outline: none;
+}
+.search-form__button:active {
+  background-color: #304b6d;
+  outline: none;
+}
+.user-avatar {
   outline: none;
 }

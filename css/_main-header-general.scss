@@ -13,8 +13,73 @@
 }
 .search-form__input {
   height: 40px;
+  width: 80%;
   background: $bkg-color-1;
   border-radius: 6px;
+  padding-left: 12px;
   border: none;
   outline: none;
+  position: relative;
+}
+.search-form__button {
+  outline: none;
+  position: absolute;
+  margin-left: -10px;
+}
+.user-wraper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.user-wraper__info {
+  padding-left: 30px;
+}
+.user-cart:hover {
+  text-decoration: none;
+}
+.user-cart::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: $tcolor-2;
+  transition: width 0.3s;
+}
+.user-cart:hover::after {
+  width: 120%;
+  transition: width 0.3s;
+}
+.user-cart:focus::after {
+  width: 120%;
+  transition: width 0.3s;
+}
+.user-cart {
+  position: relative;
+}
+.user-cart__count {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $prime-color;
+  color: $bkg-tcolor-2;
+  position: absolute;
+  left: 60%;
+  bottom: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-avatar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.user-avatar__name {
+  padding-left: 18px;
+  padding-right: 24px;
+}
+.user-avatar__icon {
+  position: absolute;
+  left: 90%;
+  top: 44%;
 }
