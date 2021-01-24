@@ -1901,6 +1901,13 @@ button {
   line-height: 18px;
 }
 
+.main-nav__link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+
 .search-form__button {
   width: 36px;
   height: 40px;
@@ -2432,6 +2439,113 @@ button {
   .user-avatar__icon {
     left: 86%;
     font-size: 14px;
+  }
+}
+
+.main-nav-wrap {
+  background-color: #0a223d;
+}
+
+.main-nav {
+  padding: 20px 0;
+}
+
+.main-nav__list-item {
+  padding-bottom: 10px;
+}
+
+.main-nav__list-item:last-child {
+  padding-bottom: 0;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-nav__link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-nav__link:focus {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-nav__link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.main-nav__link:hover::after {
+  width: 100%;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.main-nav__link:focus::after {
+  width: 100%;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+@media (min-width: 576px) {
+  .main-nav__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-nav__list-item:last-child {
+    padding-bottom: 10px;
+  }
+  .main-nav__list-item {
+    padding: 10px 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-nav {
+    padding: 32px 0;
+  }
+  .main-nav__list-item {
+    padding: 0 10px;
+  }
+  .main-nav__list-item:last-child {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav__list-item {
+    padding-left: 0;
+    padding-right: 84px;
+  }
+  .main-nav__list-item:last-child {
+    padding-right: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
