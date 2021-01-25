@@ -1908,6 +1908,50 @@ button {
   color: #fff;
 }
 
+.page-path__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12px;
+  color: #333;
+}
+
+@media (min-width: 992px) {
+  .page-path__text {
+    font-size: 10px;
+  }
+}
+
+.main-title__style {
+  color: #333;
+  font-weight: 700;
+}
+
+.main-title__offer {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 13px;
+}
+
+.service-list {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #333;
+}
+
+.ratting-btn__users {
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+}
+
+.ratting-btn__scale {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 .search-form__button {
   width: 36px;
   height: 40px;
@@ -1927,6 +1971,35 @@ button {
 }
 
 .user-avatar {
+  outline: none;
+}
+
+.ratting-btn {
+  background-color: #ec1f46;
+  color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ec1f46;
+  outline: none;
+}
+
+.ratting-btn:hover {
+  background-color: #fff;
+  color: #ec1f46;
+  border: 1px solid #ec1f46;
+  outline: none;
+}
+
+.ratting-btn:focus {
+  background-color: #fff;
+  color: #ec1f46;
+  border: 1px solid #ec1f46;
+  outline: none;
+}
+
+.ratting-btn:active {
+  background-color: #0a223d;
+  color: #fff;
+  border: 1px solid #fff;
   outline: none;
 }
 
@@ -2070,6 +2143,10 @@ button {
 .user-avatar__icon {
   color: #000;
   font-size: 12px;
+}
+
+.gold-stars__style {
+  color: #f2994a;
 }
 
 .main-header-info {
@@ -2547,5 +2624,138 @@ button {
   .main-nav__list-item:last-child {
     padding-right: 0;
   }
+}
+
+.hero-section {
+  background-color: #f5fafe;
+}
+
+.page-path {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 18px 0;
+}
+
+@media (min-width: 992px) {
+  .page-path {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.result-of-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.hotel-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.main-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-title__style {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.main-title__offer {
+  background-color: #ec1f46;
+  border-radius: 3px;
+  height: 40px;
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.service-list {
+  padding: 10px 0;
+}
+
+.ratting-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ratting-btn__users {
+  padding: 8px 8px 2px 8px;
+}
+
+.ratting-btn__scale {
+  position: relative;
+  padding-bottom: 6px;
+}
+
+.ratting-btn__scale-nb {
+  position: absolute;
+  bottom: 52%;
 }
 /*# sourceMappingURL=main.css.map */

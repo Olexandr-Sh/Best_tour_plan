@@ -1,0 +1,68 @@
+.hero-section {
+  background-color: $bkg-color-1;
+}
+.page-path {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 18px 0;
+}
+@include media-breakpoint-up(lg) {
+  .page-path {
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+.result-of-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+.hotel-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-title__style {
+  margin: 0;
+  padding: 10px 0;
+}
+.main-title__offer {
+  background-color: $prime-color;
+  border-radius: 3px;
+  height: 40px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-list {
+  padding: 10px 0;
+}
+.ratting-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ratting-btn__users {
+  padding: 8px 8px 2px 8px;
+}
+.ratting-btn__scale {
+  position: relative;
+  padding-bottom: 6px;
+}
+.ratting-btn__scale-nb {
+  position: absolute;
+  bottom: 52%;
+}

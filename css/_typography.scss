@@ -48,3 +48,40 @@
   line-height: 18px;
   color: $bkg-tcolor-2;
 }
+.page-path__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12px;
+  color: $tcolor-1;
+}
+@include media-breakpoint-up(lg) {
+  .page-path__text {
+    font-size: 10px;
+  }
+}
+.main-title__style {
+  color: $tcolor-1;
+  font-weight: 700;
+}
+.main-title__offer {
+  color: $bkg-tcolor-2;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 13px;
+}
+.service-list {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: $tcolor-1;
+}
+.ratting-btn__users {
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+}
+.ratting-btn__scale {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}

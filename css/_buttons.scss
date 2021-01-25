@@ -16,3 +16,28 @@
 .user-avatar {
   outline: none;
 }
+.ratting-btn {
+  background-color: $prime-color;
+  color: $bkg-tcolor-2;
+  border-radius: 4px;
+  border: 1px solid $prime-color;
+  outline: none;
+}
+.ratting-btn:hover {
+  background-color: $bkg-tcolor-2;
+  color: $prime-color;
+  border: 1px solid $prime-color;
+  outline: none;
+}
+.ratting-btn:focus {
+  background-color: $bkg-tcolor-2;
+  color: $prime-color;
+  border: 1px solid $prime-color;
+  outline: none;
+}
+.ratting-btn:active {
+  background-color: $second-color;
+  color: $bkg-tcolor-2;
+  border: 1px solid $bkg-tcolor-2;
+  outline: none;
+}
