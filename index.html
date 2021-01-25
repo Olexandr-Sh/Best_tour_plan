@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
     <meta name="author" content="Shevtsov" />
     <meta name="description" content="BestTourPlan provides travel services" />
     <meta
@@ -10,16 +13,161 @@
       content="travel, hotels, restaurants, events, luxury, star, trip, discover"
     />
     <title>BestTourPlan</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./icomoon/style.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body class="common">
-    <h1 class="title">Home page</h1>
-    <button class="main-btn">Button</button>
+    <header class="main-header">
+      <div class="main-header-info">
+        <div class="container">
+          <div class="header-info">
+            <div class="header-info__text">
+              <span class="header-info__text-1">Questions? Need Help?</span>
+              <span class="header-info__text-2">
+                <a href="tel:+1234561500" class="header-info__link"
+                  >Call us on (+123) 456 1500
+                </a>
+              </span>
+            </div>
+            <ul class="header-info-list">
+              <li class="header-info-list__item">
+                <a href="#" class="header-info-list__link">
+                  <span class="icon-gift-card header-icons"></span>
+                  BTP Gift Card
+                </a>
+              </li>
+              <li class="header-info-list__item">
+                <a href="#" class="header-info-list__link">
+                  <span class="icon-loyalty-program-star header-icons"></span>
+                  Loyalty Program
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main-header-general">
+        <div class="container">
+          <div class="header-general">
+            <a href="#" class="page-logo">
+              <img
+                src="./images/best_tour_plan_logo/best_tour_plan.svg"
+                alt="best-tour-plan-logo"
+              />
+            </a>
+            <form class="search-form">
+              <input
+                class="search-form__input"
+                type="text"
+                placeholder="Search Location"
+                aria-label="search-location"
+              />
+              <button class="search-form__button" aria-label="search">
+                <span class="icon-search-icon search-form__button-icon"></span>
+              </button>
+            </form>
+            <div class="user-wraper">
+              <div class="user-wraper__info">
+                <a href="#" class="user-cart" aria-label="user cart">
+                  <span class="icon-shopping-cart-icon user-cart__icon"></span>
+                  <span class="user-cart__count">2</span>
+                </a>
+              </div>
+              <div class="user-wraper__info">
+                <button class="user-avatar">
+                  <img
+                    class="user-avatar__photo"
+                    src="./images/nathan_photo/nathan_40x40_1x.jpg"
+                    alt="nathan avatar"
+                  />
+                  <span class="user-avatar__name">Nathan</span>
+                  <span class="icon-chevron-down user-avatar__icon"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-nav-wrap">
+        <div class="container">
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__list-item">
+                <a href="#" class="main-nav__link">ALL DEALS</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="#" class="main-nav__link">HOTELS</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="#" class="main-nav__link">ACTIVITIES</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="#" class="main-nav__link">HOTEL DAY PACKAGES</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="#" class="main-nav__link">RESTAURANTS</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="#" class="main-nav__link">EVENTS</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="#" class="main-nav__link">RODRIGUES</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="tabs-section">
+      <div class="container">
+        <ul class="main-tabs">
+          <li class="main-tabs__list-item">
+            <button class="main-tabs__item main-tabs__item--active">
+              Package Summary
+            </button>
+          </li>
+          <li class="main-tabs__list-item">
+            <button class="main-tabs__item">Package Summary</button>
+          </li>
+        </ul>
+        <div class="main-tab">
+          <h2 class="subtitle main-tab__title">Package Summary</h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="info-card">
+                <div class="info-card__header">
+                  <h3 class="info-card__title">Package Highlights</h3>
+                </div>
+              </div>
+              <ul class="plain-list">
+                <li class="plain-list__item">
+                  <span class="plain-list__icon">
+                    <span class="icon-check"></span>
+                  </span>
+                  Half Board
+                </li>
+                <li class="plain-list__item">
+                  <span class="plain-list__icon">
+                    <span class="icon-check"></span>
+                  </span>
+                  Half Board
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./bootstrap/js/dist/util.js"></script>
+    <script src="./bootstrap/js/dist/carousel.js"></script>
   </body>
 </html>
