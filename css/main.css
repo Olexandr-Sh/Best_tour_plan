@@ -3000,4 +3000,20 @@ button {
             justify-content: space-between;
   }
 }
+
+.carousel-item-image-wrap {
+  display: block;
+  position: relative;
+}
+
+.carousel-item-image-wrap:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48), rgba(255, 255, 255, 0.128));
+}
 /*# sourceMappingURL=main.css.map */
