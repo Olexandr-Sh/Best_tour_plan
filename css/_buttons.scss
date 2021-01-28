@@ -7,11 +7,12 @@
 }
 .search-form__button:hover {
   background-color: $second-color;
-  outline: none;
+}
+.search-form__button:focus {
+  background-color: $second-color;
 }
 .search-form__button:active {
   background-color: #304b6d;
-  outline: none;
 }
 .user-avatar {
   outline: none;
@@ -28,19 +29,16 @@
   background-color: $bkg-tcolor-2;
   color: $prime-color;
   border: 1px solid $prime-color;
-  outline: none;
 }
 .ratting-btn:focus {
   background-color: $bkg-tcolor-2;
   color: $prime-color;
   border: 1px solid $prime-color;
-  outline: none;
 }
 .ratting-btn:active {
   background-color: $second-color;
   color: $bkg-tcolor-2;
   border: 1px solid $bkg-tcolor-2;
-  outline: none;
 }
 .other-options__btn {
   background-color: $prime-color;
@@ -57,17 +55,14 @@
   background-color: $bkg-tcolor-2;
   color: $prime-color;
   border: 1px solid $prime-color;
-  outline: none;
 }
 .other-options__btn:focus {
   background-color: $bkg-tcolor-2;
   color: $prime-color;
   border: 1px solid $prime-color;
-  outline: none;
 }
 .other-options__btn:active {
   background-color: $second-color;
   color: $bkg-tcolor-2;
   border: 1px solid $bkg-tcolor-2;
-  outline: none;
 }

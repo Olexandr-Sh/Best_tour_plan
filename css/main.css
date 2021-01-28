@@ -1844,6 +1844,10 @@ button {
   border: none;
 }
 
+button:focus {
+  outline: none;
+}
+
 .common {
   font-family: "Mulish", sans-serif;
 }
@@ -1997,12 +2001,14 @@ button {
 
 .search-form__button:hover {
   background-color: #0a223d;
-  outline: none;
+}
+
+.search-form__button:focus {
+  background-color: #0a223d;
 }
 
 .search-form__button:active {
   background-color: #304b6d;
-  outline: none;
 }
 
 .user-avatar {
@@ -2022,21 +2028,18 @@ button {
   background-color: #fff;
   color: #ec1f46;
   border: 1px solid #ec1f46;
-  outline: none;
 }
 
 .ratting-btn:focus {
   background-color: #fff;
   color: #ec1f46;
   border: 1px solid #ec1f46;
-  outline: none;
 }
 
 .ratting-btn:active {
   background-color: #0a223d;
   color: #fff;
   border: 1px solid #fff;
-  outline: none;
 }
 
 .other-options__btn {
@@ -2057,21 +2060,18 @@ button {
   background-color: #fff;
   color: #ec1f46;
   border: 1px solid #ec1f46;
-  outline: none;
 }
 
 .other-options__btn:focus {
   background-color: #fff;
   color: #ec1f46;
   border: 1px solid #ec1f46;
-  outline: none;
 }
 
 .other-options__btn:active {
   background-color: #0a223d;
   color: #fff;
   border: 1px solid #fff;
-  outline: none;
 }
 
 @font-face {
@@ -2813,7 +2813,7 @@ button {
 }
 
 .ratting-btn__users {
-  padding: 8px 8px 2px 8px;
+  padding: 8px 8px 2px;
 }
 
 .ratting-btn__scale {
