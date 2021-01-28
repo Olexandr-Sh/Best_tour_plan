@@ -57,11 +57,66 @@
 }
 .ratting-btn__scale {
   position: relative;
-  padding-bottom: 6px;
+  padding: 0 18px 6px 18px;
 }
 .ratting-btn__scale-nb {
   position: absolute;
   bottom: 52%;
+}
+// .hilton-hotel-wraper {
+//   background: linear-gradient(
+//     180deg,
+//     rgba(0, 122, 223, 0.48) 0%,
+//     rgba(255, 255, 255, 0.128) 100%
+//   );
+//   border-radius: 8px;
+//   position: relative;
+//   background-position: center;
+//   z-index: 0;
+// }
+// .hilton-hotel-photo {
+//   position: absolute;
+//   z-index: 10;
+// }
+.hilton-hotel-wraper {
+  padding-bottom: 20px;
+}
+.carousel-inner {
+  border-radius: 8px;
+}
+.other-wraper {
+  background-color: $second-color;
+  color: $bkg-tcolor-2;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.other-options {
+  display: flex;
+  justify-content: space-around;
+}
+.other-options__price {
+  display: flex;
+  flex-direction: column;
+}
+.other-option-mid-txt {
+  padding-bottom: 8px;
+}
+.other-options__room-phone {
+  padding-top: 16px;
+}
+.other-option-lrg-txt {
+  padding-bottom: 18px;
+}
+.figure-map {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.map-style {
+  border-radius: 10px;
 }
 @include media-breakpoint-up(sm) {
   .result-of-search {
@@ -82,6 +137,14 @@
     padding-top: 4px;
     padding-bottom: 0;
   }
+  .other-wraper {
+    padding: 14px;
+  }
+}
+@include media-breakpoint-up(md) {
+  .other-options__btn {
+    padding: 14px 84px;
+  }
 }
 @include media-breakpoint-up(lg) {
   .gold-stars__style {
@@ -97,12 +160,38 @@
   .main-title__style {
     padding-right: 14px;
   }
+  .other-wraper {
+    padding: 26px;
+  }
+  .map-style {
+    height: 212px;
+  }
 }
 @include media-breakpoint-up(xl) {
+  .other-options {
+    justify-content: space-between;
+  }
   .gold-stars__style {
     font-size: 6px;
   }
   .result-of-search {
     align-items: flex-end;
+  }
+  .figure-map {
+    padding-top: 28px;
+  }
+  .map-style {
+    height: 208px;
+  }
+  .other-options__btn {
+    padding: 14px 82px;
+  }
+  .other-options__room-hotel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .other-options__room-gest {
+    display: flex;
+    justify-content: space-between;
   }
 }

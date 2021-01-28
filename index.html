@@ -78,11 +78,24 @@
               </div>
               <div class="user-wraper__info">
                 <button class="user-avatar">
-                  <img
-                    class="user-avatar__photo"
-                    src="./images/nathan_photo/nathan_40x40_1x.jpg"
-                    alt="nathan avatar"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/nathan_photo/nathan_40x40_1x.webp 1x,
+                        ./images/nathan_photo/nathan_80x80_2x.webp 2x
+                      "
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/nathan_photo/nathan_40x40_1x.jpg 1x,
+                        ./images/nathan_photo/nathan_80x80_2x.jpg 2x
+                      "
+                      type="image/jpeg" />
+                    <img
+                      class="user-avatar__photo"
+                      src="./images/nathan_photo/nathan_40x40_1x.jpg"
+                      alt="nathan avatar"
+                  /></picture>
                   <span class="user-avatar__name">Nathan</span>
                   <span class="icon-chevron-down user-avatar__icon"></span>
                 </button>
@@ -147,56 +160,271 @@
             >
           </div>
           <button class="ratting-btn" aria-label="user rattings">
-            <span class="ratting-btn__users">User Rattings</span
-            ><span class="ratting-btn__scale"
-              >4.5/ <sub class="ratting-btn__scale-nb">5</sub></span
-            >
+            <span class="ratting-btn__users">User Rattings</span>
+            <span class="ratting-btn__scale"
+              >4.5/<sub class="ratting-btn__scale-nb">5</sub>
+            </span>
           </button>
         </div>
-        <div
-          id="carouselExampleInterval"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-interval="10000">
-              <img
-                src="./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.jpg"
-                class="d-block w-100"
-                alt="grand hilton hotel"
-              />
-            </div>
-            <div class="carousel-item" data-interval="2000">
-              <img
-                src="./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.jpg"
-                class="d-block w-100"
-                alt="grand hilton hotel"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.jpg"
-                class="d-block w-100"
-                alt="grand hilton hotel"
-              />
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 col-xl-8 hilton-hotel-wraper">
+            <div class="hilton-hotel-photo">
+              <div
+                id="carouselExampleInterval"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="10000">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.webp  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_1456x900_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 992px)" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.jpg  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_1456x900_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 992px)" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(768)_690x427_1x.webp  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(768)_1380x853_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(768)_690x427_1x.jpg  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(768)_1380x853_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(576)_510x315_1x.webp  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(576)_1020x630_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 576px)" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(576)_510x315_1x.jpg  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(576)_1020x630_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 576px)" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.webp  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_1456x900_2x.webp 2x
+                        "
+                        type="image/webp" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.jpg  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_1456x900_2x.jpg 2x
+                        "
+                        type="image/jpeg" />
+                      <img
+                        src="./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.jpg"
+                        class="d-block w-100"
+                        alt="grand hilton hotel"
+                    /></picture>
+                  </div>
+                  <div class="carousel-item" data-interval="2000">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.webp  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_1456x900_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 992px)" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.jpg  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_1456x900_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 992px)" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(768)_690x427_1x.webp  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(768)_1380x853_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(768)_690x427_1x.jpg  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(768)_1380x853_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(576)_510x315_1x.webp  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(576)_1020x630_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 576px)" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(576)_510x315_1x.jpg  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(576)_1020x630_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 576px)" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.webp  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_1456x900_2x.webp 2x
+                        "
+                        type="image/webp" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.jpg  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_1456x900_2x.jpg 2x
+                        "
+                        type="image/jpeg" />
+                      <img
+                        src="./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.jpg"
+                        class="d-block w-100"
+                        alt="grand hilton hotel"
+                    /></picture>
+                  </div>
+                  <div class="carousel-item">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.webp  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_1456x900_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 992px)" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.jpg  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_1456x900_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 992px)" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(768)_690x427_1x.webp  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(768)_1380x853_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(768)_690x427_1x.jpg  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(768)_1380x853_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(576)_510x315_1x.webp  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(576)_1020x630_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 576px)" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(576)_510x315_1x.jpg  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_(576)_1020x630_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 576px)" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.webp  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_1456x900_2x.webp 2x
+                        "
+                        type="image/webp" />
+                      <source
+                        srcset="
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.jpg  1x,
+                          ./images/grand_hilton_hotel/grand_hilton_hotel_1456x900_2x.jpg 2x
+                        "
+                        type="image/jpeg" />
+                      <img
+                        src="./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.jpg"
+                        class="d-block w-100"
+                        alt="grand hilton hotel"
+                    /></picture>
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselExampleInterval"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon" aria-hidden="true">
+                  </span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselExampleInterval"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span class="carousel-control-next-icon" aria-hidden="true">
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselExampleInterval"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleInterval"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </a>
+          <div class="col-sm-12 col-lg-6 col-xl-4 other-options-map">
+            <div class="other-wraper">
+              <div class="other-options">
+                <div class="other-options__price">
+                  <span class="other-option-sml-txt">price starts as</span>
+                  <span class="other-option-big-txt">&#36; 8,500</span>
+                  <span class="other-option-mid-txt">per room / night</span>
+                  <span class="other-option-lrg-txt">Quick Booking</span>
+                </div>
+                <div class="other-options__room">
+                  <div class="other-options__room-gest">
+                    <span class="icon-user-icon other-options__icon"></span>
+                    <span class="other-option-mid-txt">2 x Guests</span>
+                  </div>
+                  <div class="other-options__room-hotel">
+                    <span class="icon-home-icon other-options__icon"></span>
+                    <span class="other-option-mid-txt">1 x Room</span>
+                  </div>
+                  <div class="other-options__room-phone">
+                    <span
+                      class="icon-phone-call-icon other-options__icon"
+                    ></span>
+                    <span class="other-option-lrg-txt">12100</span>
+                  </div>
+                </div>
+              </div>
+              <button class="other-options__btn" href="#">
+                View Other Options
+              </button>
+            </div>
+            <figure class="figure-map">
+              <iframe
+                title="map"
+                class="map-style"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.5055203692987!2d35.05302421554022!3d48.46601637925102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9ffb0c281aeab08e!2z0JrQvtC80L_RjNGO0YLQtdGA0L3QsNGPINGI0LrQvtC70LAgSGlsbGVs!5e0!3m2!1sru!2sua!4v1606076668933!5m2!1sru!2sua"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </figure>
+          </div>
         </div>
       </div>
     </section>

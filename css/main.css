@@ -1839,9 +1839,9 @@ template {
 
 button {
   cursor: pointer;
+  outline: none;
   background: none;
   border: none;
-  outline: none;
 }
 
 .common {
@@ -1963,6 +1963,30 @@ button {
   line-height: 18px;
 }
 
+.other-option-sml-txt {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.other-option-big-txt {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.other-option-mid-txt {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.other-option-lrg-txt {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
 .search-form__button {
   width: 36px;
   height: 40px;
@@ -1991,6 +2015,7 @@ button {
   border-radius: 4px;
   border: 1px solid #ec1f46;
   outline: none;
+  padding: 0;
 }
 
 .ratting-btn:hover {
@@ -2008,6 +2033,41 @@ button {
 }
 
 .ratting-btn:active {
+  background-color: #0a223d;
+  color: #fff;
+  border: 1px solid #fff;
+  outline: none;
+}
+
+.other-options__btn {
+  background-color: #ec1f46;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 12px 24px;
+  border: 1px solid #ec1f46;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.other-options__btn:hover {
+  background-color: #fff;
+  color: #ec1f46;
+  border: 1px solid #ec1f46;
+  outline: none;
+}
+
+.other-options__btn:focus {
+  background-color: #fff;
+  color: #ec1f46;
+  border: 1px solid #ec1f46;
+  outline: none;
+}
+
+.other-options__btn:active {
   background-color: #0a223d;
   color: #fff;
   border: 1px solid #fff;
@@ -2158,6 +2218,11 @@ button {
 
 .gold-stars__style {
   color: #f2994a;
+}
+
+.other-options__icon {
+  font-size: 14px;
+  padding-right: 8px;
 }
 
 .main-header-info {
@@ -2753,12 +2818,80 @@ button {
 
 .ratting-btn__scale {
   position: relative;
-  padding-bottom: 6px;
+  padding: 0 18px 6px 18px;
 }
 
 .ratting-btn__scale-nb {
   position: absolute;
   bottom: 52%;
+}
+
+.hilton-hotel-wraper {
+  padding-bottom: 20px;
+}
+
+.carousel-inner {
+  border-radius: 8px;
+}
+
+.other-wraper {
+  background-color: #0a223d;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.other-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.other-options__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.other-option-mid-txt {
+  padding-bottom: 8px;
+}
+
+.other-options__room-phone {
+  padding-top: 16px;
+}
+
+.other-option-lrg-txt {
+  padding-bottom: 18px;
+}
+
+.figure-map {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+}
+
+.map-style {
+  border-radius: 10px;
 }
 
 @media (min-width: 576px) {
@@ -2789,6 +2922,15 @@ button {
     padding-top: 4px;
     padding-bottom: 0;
   }
+  .other-wraper {
+    padding: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .other-options__btn {
+    padding: 14px 84px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -2810,9 +2952,20 @@ button {
   .main-title__style {
     padding-right: 14px;
   }
+  .other-wraper {
+    padding: 26px;
+  }
+  .map-style {
+    height: 212px;
+  }
 }
 
 @media (min-width: 1200px) {
+  .other-options {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .gold-stars__style {
     font-size: 6px;
   }
@@ -2820,6 +2973,31 @@ button {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+  .figure-map {
+    padding-top: 28px;
+  }
+  .map-style {
+    height: 208px;
+  }
+  .other-options__btn {
+    padding: 14px 82px;
+  }
+  .other-options__room-hotel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .other-options__room-gest {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 /*# sourceMappingURL=main.css.map */
