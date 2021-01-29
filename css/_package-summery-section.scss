@@ -1,0 +1,39 @@
+.tabs-section {
+  background-color: $bkg-color-1;
+  padding: 20px 0;
+}
+.main-tabs {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-tabs__list-item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background: $prime-color;
+  transition: width 0.3s;
+}
+.main-tabs__list-item:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+.main-tabs__list-item:focus::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+.main-tabs__list-item:first-child:hover::after {
+  width: 0;
+}
+.main-tabs__list-item:first-child:focus::after {
+  width: 0;
+}
+.main-tabs__item--active {
+  color: $prime-color;
+  border-bottom: 4px solid $prime-color;
+  padding-bottom: 14px;
+}
