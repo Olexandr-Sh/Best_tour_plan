@@ -37,3 +37,17 @@
   border-bottom: 4px solid $prime-color;
   padding-bottom: 14px;
 }
+@include media-breakpoint-up(sm) {
+  .main-tabs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .main-tabs {
+    justify-content: space-between;
+    padding: 20px 0 40px 0;
+  }
+}
