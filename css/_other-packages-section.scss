@@ -1,0 +1,14 @@
+.other-packages-style {
+  background-color: $bkg-color-1;
+}
+.other-packages {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.other-packages__list {
+  list-style-type: none;
+}
+.other-packages__wraper {
+  background-color: $second-color;
+}

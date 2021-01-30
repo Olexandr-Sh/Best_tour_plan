@@ -2024,6 +2024,41 @@ button:focus {
   color: #ec1f46;
 }
 
+.other-packages__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  color: #333;
+}
+
+.hotel-blue-haven-main-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+}
+
+.hotel-blue-haven-txt {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.hotel-blue-haven__txt {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+}
+
+.hotel-blue-haven__big-txt {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+}
+
 .search-form__button {
   width: 36px;
   height: 40px;
@@ -2123,6 +2158,14 @@ button:focus {
 .main-tabs__item:focus {
   color: #ec1f46;
   border-bottom: 4px solid #ec1f46;
+}
+
+.other-packages-btn {
+  background-color: #ec1f46;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 @font-face {
@@ -2274,6 +2317,11 @@ button:focus {
 .other-options__icon {
   font-size: 14px;
   padding-right: 8px;
+}
+
+.hotel-blue-haven__icon {
+  color: #fff;
+  font-size: 14px;
 }
 
 .main-header-info {
@@ -3449,5 +3497,29 @@ button:focus {
   .third-list-item-col {
     padding-left: 68px;
   }
+}
+
+.other-packages-style {
+  background-color: #f5fafe;
+}
+
+.other-packages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.other-packages__list {
+  list-style-type: none;
+}
+
+.other-packages__wraper {
+  background-color: #0a223d;
 }
 /*# sourceMappingURL=main.css.map */
