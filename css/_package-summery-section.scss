@@ -2,6 +2,11 @@
   background-color: $bkg-color-1;
   padding: 20px 0;
 }
+.main-tab__title {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin: 0;
+}
 .main-tabs {
   margin: 0;
   padding: 0;
@@ -51,8 +56,17 @@
     padding: 20px 0 40px 0;
   }
 }
+.main-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-card-styles {
+  padding-bottom: 32px;
+}
 .info-card {
   background-color: $bkg-tcolor-2;
+  border-radius: 8px 8px 8px 0;
 }
 .info-card__header {
   background-color: $second-color;
@@ -62,19 +76,19 @@
   padding: 16px 24px;
   margin: 0;
 }
-.info_card__list {
+.info-card__list {
   list-style-type: none;
   margin: 0;
-  padding: 26px;
+  padding: 26px 26px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.info_card__list-item {
+.info-card__list-item {
   padding-bottom: 24px;
   color: $tcolor-1;
   position: relative;
-  padding-left: 42px;
+  padding-left: 36px;
   display: flex;
   align-items: center;
 }
@@ -88,6 +102,7 @@
   display: flex;
   position: absolute;
   left: 0;
+  align-self: flex-start;
 }
 .gray-bullet__icon {
   color: $bkg-tcolor-2;
@@ -96,4 +111,69 @@
 }
 .second-list-text {
   padding-right: 30px;
+}
+.offer-details__second {
+  display: flex;
+  flex-direction: column;
+}
+.offer-details__second-t {
+  padding-bottom: 34px;
+  padding-right: 20px;
+}
+.offer-details__calendar {
+  font-size: 16px;
+  color: $tcolor-1;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  left: 0;
+  align-self: center;
+}
+.offer-details__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 26px 26px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.offer-details__list-item {
+  padding-bottom: 18px;
+  color: $tcolor-1;
+  position: relative;
+  padding-left: 36px;
+  display: flex;
+  align-items: center;
+}
+@include media-breakpoint-up(sm) {
+  .offer-details__list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .offer-details__list-item {
+    width: 50%;
+  }
+  .offer-details__second-t {
+    padding-bottom: 44px;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .offer-details__second-t {
+    padding-bottom: 26px;
+  }
+  .info-card__list-item {
+    padding-left: 26px;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .info-card__list-item {
+    padding-left: 36px;
+  }
+  .offer-details__list-item {
+    width: 48%;
+  }
+  .offer-details__second-t {
+    padding-bottom: 40px;
+  }
 }
