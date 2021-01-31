@@ -1,0 +1,199 @@
+.hero-section {
+  background-color: $bkg-color-1;
+}
+.page-path {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 18px 0;
+}
+@include media-breakpoint-up(lg) {
+  .page-path {
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+.result-of-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+.hotel-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-title__style {
+  margin: 0;
+  padding: 10px 0;
+}
+.main-title__offer {
+  background-color: $prime-color;
+  border-radius: 3px;
+  margin: 0;
+  padding: 16px 10px;
+}
+.service-list {
+  padding: 10px 0;
+}
+.ratting-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ratting-btn__users {
+  padding: 8px 8px 2px;
+}
+.ratting-btn__scale {
+  position: relative;
+  padding: 0 18px 6px 18px;
+}
+.ratting-btn__scale-nb {
+  position: absolute;
+  bottom: 52%;
+}
+.hilton-hotel-wraper {
+  padding-bottom: 20px;
+}
+.carousel-inner {
+  border-radius: 8px;
+}
+.other-wraper {
+  background-color: $second-color;
+  color: $bkg-tcolor-2;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.other-options {
+  display: flex;
+  justify-content: space-around;
+}
+.other-options__price {
+  display: flex;
+  flex-direction: column;
+}
+.other-option-mid-txt {
+  padding-bottom: 8px;
+}
+.other-options__room-phone {
+  padding-top: 16px;
+}
+.other-option-lrg-txt {
+  padding-bottom: 18px;
+}
+.figure-map {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.map-style {
+  border-radius: 10px;
+}
+@include media-breakpoint-up(sm) {
+  .result-of-search {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .hotel-info {
+    align-items: flex-start;
+  }
+  .main-title {
+    align-items: flex-start;
+  }
+  .main-title__style {
+    margin: 0;
+    padding: 0 0;
+  }
+  .service-list {
+    padding-top: 4px;
+    padding-bottom: 0;
+  }
+  .other-wraper {
+    padding: 14px;
+  }
+}
+@include media-breakpoint-up(md) {
+  .other-options__btn {
+    padding: 14px 84px;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .gold-stars__style {
+    font-size: 10px;
+  }
+  .main-title {
+    flex-direction: row;
+    align-items: center;
+  }
+  .main-title__offer {
+    padding: 4px 10px;
+  }
+  .main-title__style {
+    padding-right: 14px;
+  }
+  .other-wraper {
+    padding: 26px;
+  }
+  .map-style {
+    height: 212px;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .other-options {
+    justify-content: space-between;
+  }
+  .gold-stars__style {
+    font-size: 6px;
+  }
+  .result-of-search {
+    align-items: flex-end;
+  }
+  .figure-map {
+    padding-top: 28px;
+  }
+  .map-style {
+    height: 208px;
+  }
+  .other-options__btn {
+    padding: 14px 82px;
+  }
+  .other-options__room-hotel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .other-options__room-gest {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.carousel-item-image-wrap {
+  display: block;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 122, 223, 0.48),
+      rgba(255, 255, 255, 0.128)
+    );
+  }
+}

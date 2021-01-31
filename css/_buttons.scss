@@ -7,12 +7,62 @@
 }
 .search-form__button:hover {
   background-color: $second-color;
-  outline: none;
+}
+.search-form__button:focus {
+  background-color: $second-color;
 }
 .search-form__button:active {
   background-color: #304b6d;
-  outline: none;
 }
 .user-avatar {
   outline: none;
+}
+.ratting-btn {
+  background-color: $prime-color;
+  color: $bkg-tcolor-2;
+  border-radius: 4px;
+  border: 1px solid $prime-color;
+  outline: none;
+  padding: 0;
+}
+.ratting-btn:hover {
+  background-color: $bkg-tcolor-2;
+  color: $prime-color;
+  border: 1px solid $prime-color;
+}
+.ratting-btn:focus {
+  background-color: $bkg-tcolor-2;
+  color: $prime-color;
+  border: 1px solid $prime-color;
+}
+.ratting-btn:active {
+  background-color: $second-color;
+  color: $bkg-tcolor-2;
+  border: 1px solid $bkg-tcolor-2;
+}
+.other-options__btn {
+  background-color: $prime-color;
+  color: $bkg-tcolor-2;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 12px 24px;
+  border: 1px solid $prime-color;
+  align-self: center;
+}
+.other-options__btn:hover {
+  background-color: $bkg-tcolor-2;
+  color: $prime-color;
+  border: 1px solid $prime-color;
+}
+.other-options__btn:focus {
+  background-color: $bkg-tcolor-2;
+  color: $prime-color;
+  border: 1px solid $prime-color;
+}
+.other-options__btn:active {
+  background-color: $second-color;
+  color: $bkg-tcolor-2;
+  border: 1px solid $bkg-tcolor-2;
 }
