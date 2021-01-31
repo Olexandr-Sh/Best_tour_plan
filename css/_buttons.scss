@@ -66,3 +66,18 @@
   color: $bkg-tcolor-2;
   border: 1px solid $bkg-tcolor-2;
 }
+.main-tabs__item {
+  color: $tcolor-1;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px 4px;
+  border-bottom: 4px solid transparent;
+}
+.main-tabs__item:hover {
+  color: $prime-color;
+}
+.main-tabs__item:focus {
+  color: $prime-color;
+  border-bottom: 4px solid $prime-color;
+}
