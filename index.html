@@ -233,7 +233,7 @@
                         type="image/jpeg" />
                       <img
                         src="./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.jpg"
-                        class="d-block w-100"
+                        class="d-block w-100 carousel-item-image-wrap__img"
                         alt="grand hilton hotel"
                     /></picture>
                   </div>
@@ -295,7 +295,7 @@
                         type="image/jpeg" />
                       <img
                         src="./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.jpg"
-                        class="d-block w-100"
+                        class="d-block w-100 carousel-item-image-wrap__img"
                         alt="grand hilton hotel"
                     /></picture>
                   </div>
@@ -357,7 +357,7 @@
                         type="image/jpeg" />
                       <img
                         src="./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.jpg"
-                        class="d-block w-100"
+                        class="d-block w-100 carousel-item-image-wrap__img"
                         alt="grand hilton hotel"
                     /></picture>
                   </div>
@@ -858,108 +858,286 @@
       <div class="container">
         <div class="other-packages">
           <h2 class="other-packages__title">Other Packages</h2>
-          <div class="row">
-            <ul class="other-packages__list">
-              <li class="other-packages__list-item">
-                <div class="other-packages__wraper">
-                  <div class="other-packages__wraper-image">
+          <ul class="other-packages__list">
+            <li class="other-packages__list-item">
+              <div class="other-packages__wraper">
+                <div class="other-packages__wraper-image">
+                  <picture>
+                    <source
+                      srcset=""
+                      type="image/webp"
+                      media="(min-width: 992px)" />
+                    <source
+                      srcset=""
+                      type="image/jpeg"
+                      media="(min-width: 992px)" />
+                    <source
+                      srcset=""
+                      type="image/webp"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset=""
+                      type="image/jpeg"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/hotel_blue_haven/hotel_blue_haven_(320)_277x378_1x.webp 1x,
+                        ./images/hotel_blue_haven/hotel_blue_haven_(320)_554x757_2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 320px)" />
+                    <source
+                      srcset="
+                        ./images/hotel_blue_haven/hotel_blue_haven_(320)_277x378_1x.jpg 1x,
+                        ./images/hotel_blue_haven/hotel_blue_haven_(320)_554x757_2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 320px)" />
+                    <source
+                      srcset="
+                        ./images/hotel_blue_haven/hotel_blue_haven_366x500_1x.webp  1x,
+                        ./images/hotel_blue_haven/hotel_blue_haven_732x1000_2x.webp 2x
+                      "
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/hotel_blue_haven/hotel_blue_haven_366x500_1x.jpg  1x,
+                        ./images/hotel_blue_haven/hotel_blue_haven_732x1000_2x.jpg 2x
+                      "
+                      type="image/jpeg" />
                     <img
+                      class="other-packages__wraper-photo"
                       src="./images/hotel_blue_haven/hotel_blue_haven_366x500_1x.jpg"
                       alt="hotel blue haven"
-                    />
+                  /></picture>
+                  <span class="main-flash-offer">Flash Offer</span>
+                </div>
+                <div class="other-packages__wraper-info">
+                  <div class="gold-stars">
+                    <span class="icon-golden-star gold-stars__style"></span>
+                    <span class="icon-golden-star gold-stars__style"></span>
+                    <span class="icon-golden-star gold-stars__style"></span>
+                    <span class="icon-golden-star gold-stars__style"></span>
+                    <span class="icon-golden-star gold-stars__style"></span>
                   </div>
-                  <div class="other-packages__wraper-info">
-                    <div class="gold-stars">
-                      <span class="icon-golden-star gold-stars__style"></span>
-                      <span class="icon-golden-star gold-stars__style"></span>
-                      <span class="icon-golden-star gold-stars__style"></span>
-                      <span class="icon-golden-star gold-stars__style"></span>
-                      <span class="icon-golden-star gold-stars__style"></span>
-                    </div>
-                    <h3 class="hotel-blue-haven-main-title">
-                      Hotel Blue Haven
-                    </h3>
-                    <p class="hotel-blue-haven-txt">
-                      Aute quis duis excepteur excepteur ipsum cat eiusmod
-                      consectetur enim laborum magna llit. Ipsum est fugiat
-                      velit ea llamco do esse ut in veniam sun in onsequat. Aute
-                      quis duis epteur excepteur ipsum occaecat eiusmod
-                      nsectetur enim laborum magna mollit. Ipsum est fugiat
-                      velit ea ullamco do
-                    </p>
-                    <div class="hotel-blue-haven-loc">
-                      <span
-                        class="icon-map-pin-icon hotel-blue-haven__icon"
-                      ></span>
+                  <h3 class="hotel-blue-haven-main-title">Hotel Blue Haven</h3>
+                  <p class="hotel-blue-haven-txt">
+                    Aute quis duis excepteur excepteur ipsum cat eiusmod
+                    consectetur enim laborum magna llit. Ipsum est fugiat velit
+                    ea llamco do esse ut in veniam sun in onsequat. Aute quis
+                    duis epteur excepteur ipsum occaecat eiusmod nsectetur enim
+                    laborum magna mollit. Ipsum est fugiat velit ea ullamco do
+                  </p>
+                  <div class="hotel-blue-haven-loc">
+                    <span
+                      class="icon-map-pin-icon hotel-blue-haven__icon"
+                    ></span>
+                    <span class="hotel-blue-haven__txt"
+                      >1749 Wheeler Ridge Delaware</span
+                    >
+                  </div>
+                  <div class="hotel-blue-haven-user">
+                    <span class="icon-user-icon hotel-blue-haven__icon"></span>
+                    <span class="hotel-blue-haven__txt">2 x Guests</span>
+                  </div>
+                  <div class="hotel-blue-haven-room">
+                    <span class="icon-home-icon hotel-blue-haven__icon"></span>
+                    <span class="hotel-blue-haven__txt">1 x Room</span>
+                  </div>
+                  <div class="hotel-blue-haven-btn">
+                    <div class="hotel-btn-price">
                       <span class="hotel-blue-haven__txt"
-                        >1749 Wheeler Ridge Delaware</span
+                        ><del>&#36; 10,500</del></span
                       >
+                      <span class="hotel-blue-haven__big-txt">&#36; 8,500</span>
                     </div>
-                    <div class="hotel-blue-haven-user">
-                      <span
-                        class="icon-user-icon hotel-blue-haven__icon"
-                      ></span>
-                      <span class="hotel-blue-haven__txt">2 x Guests</span>
+                    <button class="other-packages-btn">Book Now</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="other-packages__list-item">
+              <div class="other-packages__wraper">
+                <div class="other-packages__wraper-image">
+                  <img
+                    src="./images/lux_belle_mare/lux_belle_mare_350x250_1x.jpg"
+                    alt="hotel Lux belle mare"
+                  />
+                  <span class="main-flash-offer">Flash Offer</span>
+                </div>
+                <div class="other-packages__wraper-info">
+                  <h3 class="hotel-blue-haven-main-title">LUX* Belle Mare</h3>
+                  <div class="hotel-blue-haven-loc">
+                    <span
+                      class="icon-map-pin-icon hotel-blue-haven__icon"
+                    ></span>
+                    <span class="hotel-blue-haven__txt"
+                      >1749 Wheeler Ridge Delaware</span
+                    >
+                  </div>
+                  <div class="hotel-blue-haven-user">
+                    <span class="icon-user-icon hotel-blue-haven__icon"></span>
+                    <span class="hotel-blue-haven__txt">2 x Guests</span>
+                  </div>
+                  <div class="hotel-blue-haven-room">
+                    <span class="icon-home-icon hotel-blue-haven__icon"></span>
+                    <span class="hotel-blue-haven__txt">1 x Room</span>
+                  </div>
+                  <div class="hotel-blue-haven-btn">
+                    <div class="hotel-btn-price">
+                      <span class="hotel-blue-haven__txt"
+                        ><del>&#36; 8,500</del></span
+                      >
+                      <span class="hotel-blue-haven__big-txt">&#36; 3,000</span>
                     </div>
-                    <div class="hotel-blue-haven-room">
-                      <span
-                        class="icon-home-icon hotel-blue-haven__icon"
-                      ></span>
-                      <span class="hotel-blue-haven__txt">1 x Room</span>
-                      <span class="hotel-blue-haven__txt">$ 10,500</span>
+                    <button class="other-packages-btn">Book Now</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="other-packages__list-item">
+              <div class="other-packages__wraper">
+                <div class="other-packages__wraper-image">
+                  <img
+                    src="./images/white_palace/white_palace_350x250_1x.jpg"
+                    alt="hotel white palace"
+                  />
+                  <span class="main-flash-offer">Flash Offer</span>
+                </div>
+                <div class="other-packages__wraper-info">
+                  <h3 class="hotel-blue-haven-main-title">White Palace</h3>
+                  <div class="hotel-blue-haven-loc">
+                    <span
+                      class="icon-map-pin-icon hotel-blue-haven__icon"
+                    ></span>
+                    <span class="hotel-blue-haven__txt"
+                      >1749 Wheeler Ridge Delaware</span
+                    >
+                  </div>
+                  <div class="hotel-blue-haven-user">
+                    <span class="icon-user-icon hotel-blue-haven__icon"></span>
+                    <span class="hotel-blue-haven__txt">2 x Guests</span>
+                  </div>
+                  <div class="hotel-blue-haven-room">
+                    <span class="icon-home-icon hotel-blue-haven__icon"></span>
+                    <span class="hotel-blue-haven__txt">1 x Room</span>
+                  </div>
+                  <div class="hotel-blue-haven-btn">
+                    <div class="hotel-btn-price">
+                      <span class="hotel-blue-haven__txt"
+                        ><del>&#36; 10,500</del></span
+                      >
+                      <span class="hotel-blue-haven__big-txt">&#36; 9,500</span>
                     </div>
-                    <div class="hotel-blue-haven-btn">
-                      <span class="hotel-blue-haven__big-txt">$ 8,500</span>
-                      <button class="other-packages-btn">Book Now</button>
+                    <button class="other-packages-btn">Book Now</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="other-packages__list-item">
+              <div class="other-packages__wraper">
+                <div class="other-packages__wraper-image">
+                  <img
+                    src="./images/luxury_place/luxury_palace_350x250_1x.jpg"
+                    alt="hotel luxury palace"
+                  />
+                  <span class="main-flash-offer">Flash Offer</span>
+                </div>
+                <div class="other-packages__wraper-info">
+                  <h3 class="hotel-blue-haven-main-title">Luxury Place</h3>
+                  <div class="hotel-blue-haven-loc">
+                    <span
+                      class="icon-map-pin-icon hotel-blue-haven__icon"
+                    ></span>
+                    <span class="hotel-blue-haven__txt"
+                      >1749 Wheeler Ridge Delaware</span
+                    >
+                  </div>
+                  <div class="hotel-blue-haven-user">
+                    <span class="icon-user-icon hotel-blue-haven__icon"></span>
+                    <span class="hotel-blue-haven__txt">2 x Guests</span>
+                  </div>
+                  <div class="hotel-blue-haven-room">
+                    <span class="icon-home-icon hotel-blue-haven__icon"></span>
+                    <span class="hotel-blue-haven__txt">1 x Room</span>
+                  </div>
+                  <div class="hotel-blue-haven-btn">
+                    <div class="hotel-btn-price">
+                      <span class="hotel-blue-haven__txt"
+                        ><del>&#36; 4,500</del></span
+                      >
+                      <span class="hotel-blue-haven__big-txt">&#36; 2,500</span>
                     </div>
+                    <button class="other-packages-btn">Book Now</button>
                   </div>
                 </div>
-              </li>
-              <li class="other-packages__list-item">
-                <div class="other-packages__wraper">
-                  <div class="other-packages__wraper-image">
-                    <img
-                      src="./images/lux_belle_mare/lux_belle_mare_350x250_1x.jpg"
-                      alt="hotel Lux belle mare"
-                    />
-                  </div>
-                  <div class="other-packages__wraper-info"></div>
+              </div>
+            </li>
+            <li class="other-packages__list-item">
+              <div class="other-packages__wraper">
+                <div class="other-packages__wraper-image">
+                  <img
+                    src="./images/hotel_five_star/hotel_five_star_350x250_1x.jpg"
+                    alt="hotel five star"
+                  />
+                  <span class="main-flash-offer">Flash Offer</span>
                 </div>
-              </li>
-              <li class="other-packages__list-item">
-                <div class="other-packages__wraper">
-                  <div class="other-packages__wraper-image">
-                    <img
-                      src="./images/white_palace/white_palace_350x250_1x.jpg"
-                      alt="hotel white palace"
-                    />
+                <div class="other-packages__wraper-info">
+                  <h3 class="hotel-blue-haven-main-title">Hotel Five Star</h3>
+                  <div class="hotel-blue-haven-loc">
+                    <span
+                      class="icon-map-pin-icon hotel-blue-haven__icon"
+                    ></span>
+                    <span class="hotel-blue-haven__txt"
+                      >1749 Wheeler Ridge Delaware</span
+                    >
                   </div>
-                  <div class="other-packages__wraper-info"></div>
-                </div>
-              </li>
-              <li class="other-packages__list-item">
-                <div class="other-packages__wraper">
-                  <div class="other-packages__wraper-image">
-                    <img
-                      src="./images/luxury_place/luxury_palace_350x250_1x.jpg"
-                      alt="hotel luxury palace"
-                    />
+                  <div class="hotel-blue-haven-user">
+                    <span class="icon-user-icon hotel-blue-haven__icon"></span>
+                    <span class="hotel-blue-haven__txt">2 x Guests</span>
                   </div>
-                  <div class="other-packages__wraper-info"></div>
-                </div>
-              </li>
-              <li class="other-packages__list-item">
-                <div class="other-packages__wraper">
-                  <div class="other-packages__wraper-image">
-                    <img
-                      src="./images/hotel_five_star/hotel_five_star_350x250_1x.jpg"
-                      alt="hotel five star"
-                    />
+                  <div class="hotel-blue-haven-room">
+                    <span class="icon-home-icon hotel-blue-haven__icon"></span>
+                    <span class="hotel-blue-haven__txt">1 x Room</span>
                   </div>
-                  <div class="other-packages__wraper-info"></div>
+                  <div class="hotel-blue-haven-btn">
+                    <div class="hotel-btn-price">
+                      <span class="hotel-blue-haven__txt"
+                        ><del>&#36; 6,500</del></span
+                      >
+                      <span class="hotel-blue-haven__big-txt">&#36; 3,500</span>
+                    </div>
+                    <button class="other-packages-btn">Book Now</button>
+                  </div>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="other-acrivities">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-xl-3">
+            <div class="card"></div>
+            <span class="card__text plain-text in-white">TEXT</span>
+            <button class="main-btn main-btn--sm">button</button>
+          </div>
+          <div class="col-lg-6 col-xl-3">
+            <div class="card"></div>
+            <span class="card__text plain-text in-white">TEXT</span>
+            <button class="main-btn main-btn--sm">button</button>
+          </div>
+          <div class="col-lg-6 col-xl-3">
+            <div class="card"></div>
+            <span class="card__text plain-text in-white">TEXT</span>
+            <button class="main-btn main-btn--sm">button</button>
+          </div>
+          <div class="col-lg-6 col-xl-3">
+            <div class="card"></div>
+            <span class="card__text plain-text in-white">TEXT</span>
+            <button class="main-btn main-btn--sm">button</button>
           </div>
         </div>
       </div>

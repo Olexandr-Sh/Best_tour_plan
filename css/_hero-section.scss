@@ -103,6 +103,12 @@
 .map-style {
   border-radius: 10px;
 }
+@include media-breakpoint-up(xs) {
+  .carousel-item-image-wrap__img {
+    width: 100%;
+  }
+}
+
 @include media-breakpoint-up(sm) {
   .result-of-search {
     flex-direction: row;
@@ -150,6 +156,9 @@
   }
   .map-style {
     height: 212px;
+  }
+  .carousel-item-image-wrap__img {
+    height: 450px;
   }
 }
 @include media-breakpoint-up(xl) {

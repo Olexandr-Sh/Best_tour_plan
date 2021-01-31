@@ -1,0 +1,26 @@
+.card {
+  height: 256px;
+  padding: 26px;
+  margin-bottom: 32px;
+  background: linear-gradient(
+    179.83deg,
+    rgba(196, 196, 196, 0) 35.34%,
+    #0a223d 99.85%
+  );
+  border-radius: 6px;
+  background-size: cover;
+  flex-direction: column;
+}
+.plain-text {
+  font-size: 16px;
+  line-height: 20px;
+}
+.in-white {
+  color: $bkg-tcolor-2;
+}
+.main-btn--sm {
+  padding: 8px 24px;
+}
+.card__text {
+  margin-bottom: 12px;
+}

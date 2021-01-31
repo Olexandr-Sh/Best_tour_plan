@@ -25,11 +25,7 @@
   outline: none;
   padding: 0;
 }
-.ratting-btn:hover {
-  background-color: $bkg-tcolor-2;
-  color: $prime-color;
-  border: 1px solid $prime-color;
-}
+.ratting-btn:hover,
 .ratting-btn:focus {
   background-color: $bkg-tcolor-2;
   color: $prime-color;
@@ -51,11 +47,7 @@
   border: 1px solid $prime-color;
   align-self: center;
 }
-.other-options__btn:hover {
-  background-color: $bkg-tcolor-2;
-  color: $prime-color;
-  border: 1px solid $prime-color;
-}
+.other-options__btn:hover,
 .other-options__btn:focus {
   background-color: $bkg-tcolor-2;
   color: $prime-color;
@@ -87,4 +79,17 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+  border-radius: 4px;
+  padding: 10px 26px;
+}
+.other-packages-btn:hover,
+.other-packages-btn:focus {
+  background-color: $bkg-tcolor-2;
+  color: $prime-color;
+  border: 1px solid $prime-color;
+}
+.other-packages-btn:active {
+  background-color: $second-color;
+  color: $bkg-tcolor-2;
+  border: 1px solid $bkg-tcolor-2;
 }

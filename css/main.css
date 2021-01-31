@@ -2059,6 +2059,12 @@ button:focus {
   color: #fff;
 }
 
+.main-flash-offer {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 .search-form__button {
   width: 36px;
   height: 40px;
@@ -2092,12 +2098,7 @@ button:focus {
   padding: 0;
 }
 
-.ratting-btn:hover {
-  background-color: #fff;
-  color: #ec1f46;
-  border: 1px solid #ec1f46;
-}
-
+.ratting-btn:hover,
 .ratting-btn:focus {
   background-color: #fff;
   color: #ec1f46;
@@ -2124,12 +2125,7 @@ button:focus {
       align-self: center;
 }
 
-.other-options__btn:hover {
-  background-color: #fff;
-  color: #ec1f46;
-  border: 1px solid #ec1f46;
-}
-
+.other-options__btn:hover,
 .other-options__btn:focus {
   background-color: #fff;
   color: #ec1f46;
@@ -2166,6 +2162,21 @@ button:focus {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+  border-radius: 4px;
+  padding: 10px 26px;
+}
+
+.other-packages-btn:hover,
+.other-packages-btn:focus {
+  background-color: #fff;
+  color: #ec1f46;
+  border: 1px solid #ec1f46;
+}
+
+.other-packages-btn:active {
+  background-color: #0a223d;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 @font-face {
@@ -2993,6 +3004,10 @@ button:focus {
   border-radius: 10px;
 }
 
+.carousel-item-image-wrap__img {
+  width: 100%;
+}
+
 @media (min-width: 576px) {
   .result-of-search {
     -webkit-box-orient: horizontal;
@@ -3056,6 +3071,9 @@ button:focus {
   }
   .map-style {
     height: 212px;
+  }
+  .carousel-item-image-wrap__img {
+    height: 450px;
   }
 }
 
@@ -3402,7 +3420,6 @@ button:focus {
   background-color: #fff;
   border-radius: 8px;
   padding-bottom: 46px;
-  text-align: center;
 }
 
 .package-details-main-list {
@@ -3473,7 +3490,7 @@ button:focus {
     text-align: start;
   }
   .package-details-main-list {
-    padding: 6px 0 0 24px;
+    padding: 6px 36px 0 24px;
   }
   .line {
     border-bottom: 1px dashed #e0e0e0;
@@ -3483,10 +3500,10 @@ button:focus {
     padding-bottom: 32px;
   }
   .second-list-item-col {
-    padding-left: 36px;
+    padding-left: 52px;
   }
   .third-list-item-col {
-    padding-left: 36px;
+    padding-left: 76px;
   }
 }
 
@@ -3495,7 +3512,7 @@ button:focus {
     width: 32%;
   }
   .third-list-item-col {
-    padding-left: 68px;
+    padding-left: 96px;
   }
 }
 
@@ -3515,11 +3532,139 @@ button:focus {
       align-content: center;
 }
 
+.other-packages__title {
+  margin: 0;
+  padding-bottom: 64px;
+}
+
 .other-packages__list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.other-packages__list-item {
+  padding-bottom: 30px;
 }
 
 .other-packages__wraper {
   background-color: #0a223d;
+  border-radius: 8px;
+}
+
+.other-packages__wraper-photo {
+  border-radius: 8px 8px 0 0;
+}
+
+.other-packages__wraper-image {
+  position: relative;
+}
+
+.main-flash-offer {
+  background: #ec1f46;
+  border-radius: 0px 4px 4px 0px;
+  color: #fff;
+  padding: 8px 12px;
+  position: absolute;
+  left: 0;
+  top: 26px;
+}
+
+.other-packages__wraper-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  padding: 26px;
+}
+
+.hotel-blue-haven-main-title {
+  margin: 0;
+  padding: 6px 0 26px;
+}
+
+.hotel-blue-haven-txt {
+  margin: 0;
+  padding-bottom: 24px;
+}
+
+.hotel-blue-haven-loc {
+  padding-bottom: 10px;
+}
+
+.hotel-blue-haven-user {
+  padding-bottom: 10px;
+}
+
+.hotel-blue-haven-room {
+  padding-bottom: 26px;
+}
+
+.hotel-blue-haven__icon {
+  padding-right: 14px;
+}
+
+.hotel-blue-haven-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hotel-btn-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.card {
+  height: 256px;
+  padding: 26px;
+  margin-bottom: 32px;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0a223d 99.85%);
+  border-radius: 6px;
+  background-size: cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.plain-text {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.in-white {
+  color: #fff;
+}
+
+.main-btn--sm {
+  padding: 8px 24px;
+}
+
+.card__text {
+  margin-bottom: 12px;
 }
 /*# sourceMappingURL=main.css.map */
