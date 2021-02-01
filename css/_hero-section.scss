@@ -139,7 +139,7 @@
 }
 @include media-breakpoint-up(lg) {
   .gold-stars__style {
-    font-size: 10px;
+    font-size: 6px;
   }
   .main-title {
     flex-direction: row;
@@ -164,9 +164,6 @@
 @include media-breakpoint-up(xl) {
   .other-options {
     justify-content: space-between;
-  }
-  .gold-stars__style {
-    font-size: 6px;
   }
   .result-of-search {
     align-items: flex-end;

@@ -161,6 +161,12 @@
   line-height: 22px;
   color: $bkg-tcolor-2;
 }
+@include media-breakpoint-up(lg) {
+  .hotel-blue-haven-txt {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
 .hotel-blue-haven__txt {
   font-weight: 400;
   font-size: 12px;
