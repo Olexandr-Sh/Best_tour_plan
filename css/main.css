@@ -2084,6 +2084,13 @@ button:focus {
   }
 }
 
+.what-people-think__wraper-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  color: #333;
+}
+
 .search-form__button {
   width: 36px;
   height: 40px;
@@ -2220,6 +2227,14 @@ button:focus {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-vector_1:before {
+  content: "\e919";
+}
+
+.icon-vector_2:before {
+  content: "\e91a";
 }
 
 .icon-calendar-icon:before {
@@ -3768,6 +3783,25 @@ button:focus {
   .small-box-title {
     padding-bottom: 24px;
   }
+}
+
+.what-people-think {
+  background-color: #f5fafe;
+}
+
+.what-people-think__wraper {
+  text-align: center;
+}
+
+.what-people-think__wraper-title {
+  margin: 0;
+  padding-top: 75px;
+  padding-bottom: 114px;
+}
+
+.comment {
+  background-color: #fff;
+  width: 100%;
 }
 
 .newsletter-section {
