@@ -184,3 +184,14 @@
   font-size: 12px;
   line-height: 15px;
 }
+@include media-breakpoint-up(xl) {
+  .deleted-price {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .hotel-blue-haven-txt {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+  }
+}
