@@ -2112,6 +2112,20 @@ button:focus {
   color: #333;
 }
 
+.newsletter-words__subscribe {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.newsletter-words__newsletter {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  color: #fff;
+}
+
 .search-form__button {
   width: 36px;
   height: 40px;
@@ -2120,10 +2134,7 @@ button:focus {
   outline: none;
 }
 
-.search-form__button:hover {
-  background-color: #0a223d;
-}
-
+.search-form__button:hover,
 .search-form__button:focus {
   background-color: #0a223d;
 }
@@ -2225,6 +2236,34 @@ button:focus {
   background-color: #0a223d;
   color: #fff;
   border: 1px solid #fff;
+}
+
+.send-form__button {
+  color: #fff;
+  background-color: #ec1f46;
+  border-radius: 0px 4px 4px 0px;
+  outline: none;
+  padding: 20px 10px;
+  border-left: 1px solid transparent;
+}
+
+.send-form__button:hover,
+.send-form__button:focus {
+  background-color: #fff;
+  color: #ec1f46;
+  border-left: 1px solid #ec1f46;
+}
+
+.send-form__button:active {
+  background-color: #0a223d;
+  color: #fff;
+  border-left: 1px solid #fff;
+}
+
+@media (min-width: 576px) {
+  .send-form__button {
+    padding: 20px 18px;
+  }
 }
 
 @font-face {
@@ -3967,9 +4006,86 @@ button:focus {
 }
 
 .newsletter-section {
-  background: url(../images/newsletter_bkg/newsletter_bkg_1440x260_1x.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 34, 61, 0.8)), to(rgba(10, 34, 61, 0.8))), url(../images/newsletter_bkg/newsletter_bkg_1440x260_1x.jpg);
+  background: linear-gradient(rgba(10, 34, 61, 0.8), rgba(10, 34, 61, 0.8)), url(../images/newsletter_bkg/newsletter_bkg_1440x260_1x.jpg);
   background-size: cover;
   height: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.send-form {
+  padding: 10px;
+}
+
+.send-form__input {
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px 16px 20px 12px;
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+.send-form__button {
+  outline: none;
+  position: absolute;
+  margin-left: -10px;
+}
+
+.newsletter-words {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 576px) {
+  .send-form {
+    padding: 20px 0;
+  }
+  .send-form__input {
+    padding: 20px 56px 20px 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscribe {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-right: 50px;
+  }
+  .newsletter-words {
+    padding-left: 80px;
+  }
 }
 
 .card {

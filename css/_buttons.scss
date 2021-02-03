@@ -5,9 +5,7 @@
   border-radius: 0px 6px 6px 0px;
   outline: none;
 }
-.search-form__button:hover {
-  background-color: $second-color;
-}
+.search-form__button:hover,
 .search-form__button:focus {
   background-color: $second-color;
 }
@@ -93,4 +91,28 @@
   background-color: $second-color;
   color: $bkg-tcolor-2;
   border: 1px solid $bkg-tcolor-2;
+}
+.send-form__button {
+  color: $bkg-tcolor-2;
+  background-color: $prime-color;
+  border-radius: 0px 4px 4px 0px;
+  outline: none;
+  padding: 20px 10px;
+  border-left: 1px solid transparent;
+}
+.send-form__button:hover,
+.send-form__button:focus {
+  background-color: $bkg-tcolor-2;
+  color: $prime-color;
+  border-left: 1px solid $prime-color;
+}
+.send-form__button:active {
+  background-color: $second-color;
+  color: $bkg-tcolor-2;
+  border-left: 1px solid $bkg-tcolor-2;
+}
+@include media-breakpoint-up(sm) {
+  .send-form__button {
+    padding: 20px 18px;
+  }
 }
