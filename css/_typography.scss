@@ -201,3 +201,21 @@
   line-height: 45px;
   color: $tcolor-1;
 }
+.comment__title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: $prime-color;
+}
+.comment__text {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: $tcolor-2;
+}
+.comment__mega-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: $tcolor-1;
+}

@@ -24,3 +24,41 @@
   color: $bkg-tcolor-2;
   font-size: 14px;
 }
+.what-section-chevron {
+  color: $arrows;
+}
+.icon-vector_1 {
+  visibility: hidden;
+}
+.icon-vector_2 {
+  visibility: hidden;
+}
+@include media-breakpoint-up(lg) {
+  .icon-vector_1 {
+    visibility: visible;
+    font-size: 40px;
+    color: $quotes;
+    opacity: 0.4;
+    position: absolute;
+    left: 25%;
+    top: 118px;
+  }
+  .icon-vector_2 {
+    visibility: visible;
+    font-size: 40px;
+    color: $quotes;
+    opacity: 0.4;
+    position: relative;
+    left: 45%;
+    top: 140px;
+    z-index: 0;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .icon-vector_1 {
+    top: 108px;
+  }
+  .icon-vector_2 {
+    top: 118px;
+  }
+}
