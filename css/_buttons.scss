@@ -116,3 +116,23 @@
     padding: 20px 18px;
   }
 }
+.main-btn {
+  border-radius: 4px;
+  padding: 8px 22px;
+  background-color: $prime-color;
+  color: $bkg-tcolor-2;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+.main-btn:hover,
+.main-btn:focus {
+  background-color: $bkg-tcolor-2;
+  color: $prime-color;
+  border: 1px solid $prime-color;
+}
+.main-btn:active {
+  background-color: $second-color;
+  color: $bkg-tcolor-2;
+  border: 1px solid $bkg-tcolor-2;
+}

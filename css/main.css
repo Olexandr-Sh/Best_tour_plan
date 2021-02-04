@@ -2126,6 +2126,21 @@ button:focus {
   color: #fff;
 }
 
+.newsletter-section__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  margin: 0;
+}
+
+.card__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+
 .search-form__button {
   width: 36px;
   height: 40px;
@@ -2264,6 +2279,29 @@ button:focus {
   .send-form__button {
     padding: 20px 18px;
   }
+}
+
+.main-btn {
+  border-radius: 4px;
+  padding: 8px 22px;
+  background-color: #ec1f46;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  background-color: #fff;
+  color: #ec1f46;
+  border: 1px solid #ec1f46;
+}
+
+.main-btn:active {
+  background-color: #0a223d;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 @font-face {
@@ -4088,12 +4126,16 @@ button:focus {
   }
 }
 
+.newsletter-section__title {
+  padding: 20px 0 20px 10px;
+}
+
 .card {
   height: 256px;
   padding: 26px;
   margin-bottom: 32px;
-  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0a223d 99.85%);
   border-radius: 6px;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0a223d 99.85%);
   background-size: cover;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -4101,20 +4143,84 @@ button:focus {
           flex-direction: column;
 }
 
-.plain-text {
-  font-size: 16px;
-  line-height: 20px;
+.curious-photo {
+  height: 256px;
+  padding: 26px;
+  margin-bottom: 32px;
+  border-radius: 6px;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0a223d 99.85%), url(../images/curious_corner/curious_corner_255x255_1x.jpg);
+  background-size: cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.in-white {
-  color: #fff;
+.golf-photo {
+  height: 256px;
+  padding: 26px;
+  margin-bottom: 32px;
+  border-radius: 6px;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0a223d 99.85%), url(../images/golf/golf_255x255_1x.jpg);
+  background-size: cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.main-btn--sm {
-  padding: 8px 24px;
+.falls-photo {
+  height: 256px;
+  padding: 26px;
+  margin-bottom: 32px;
+  border-radius: 6px;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0a223d 99.85%), url(../images/hiking_trip/hiking_trip_255x255_1x.jpg);
+  background-size: cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.quest-photo {
+  height: 256px;
+  padding: 26px;
+  margin-bottom: 32px;
+  border-radius: 6px;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0a223d 99.85%), url(../images/discovery_quest/discovery_quest_255x255_1x.jpg);
+  background-size: cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card__text {
-  margin-bottom: 12px;
+  position: absolute;
+  top: 50%;
+  left: 16%;
+  padding-right: 84px;
+  padding-bottom: 18px;
+}
+
+.main-btn {
+  position: absolute;
+  top: 70%;
+  left: 16%;
+}
+
+@media (min-width: 768px) {
+  .newsletter-section__title {
+    padding: 60px 0;
+  }
+  .falls-photo {
+    margin: 0;
+  }
+  .quest-photo {
+    margin: 0;
+  }
+  .other-acrivities {
+    padding-bottom: 98px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

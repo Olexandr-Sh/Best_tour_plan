@@ -1,26 +1,98 @@
+.newsletter-section__title {
+  padding: 20px 0 20px 10px;
+}
 .card {
   height: 256px;
   padding: 26px;
   margin-bottom: 32px;
+  border-radius: 6px;
   background: linear-gradient(
     179.83deg,
     rgba(196, 196, 196, 0) 35.34%,
     #0a223d 99.85%
   );
-  border-radius: 6px;
   background-size: cover;
   flex-direction: column;
 }
-.plain-text {
-  font-size: 16px;
-  line-height: 20px;
+.curious-photo {
+  height: 256px;
+  padding: 26px;
+  margin-bottom: 32px;
+  border-radius: 6px;
+  background: linear-gradient(
+      179.83deg,
+      rgba(196, 196, 196, 0) 35.34%,
+      #0a223d 99.85%
+    ),
+    url(../images/curious_corner/curious_corner_255x255_1x.jpg);
+  background-size: cover;
+  flex-direction: column;
 }
-.in-white {
-  color: $bkg-tcolor-2;
+.golf-photo {
+  height: 256px;
+  padding: 26px;
+  margin-bottom: 32px;
+  border-radius: 6px;
+  background: linear-gradient(
+      179.83deg,
+      rgba(196, 196, 196, 0) 35.34%,
+      #0a223d 99.85%
+    ),
+    url(../images/golf/golf_255x255_1x.jpg);
+  background-size: cover;
+  flex-direction: column;
 }
-.main-btn--sm {
-  padding: 8px 24px;
+.falls-photo {
+  height: 256px;
+  padding: 26px;
+  margin-bottom: 32px;
+  border-radius: 6px;
+  background: linear-gradient(
+      179.83deg,
+      rgba(196, 196, 196, 0) 35.34%,
+      #0a223d 99.85%
+    ),
+    url(../images/hiking_trip/hiking_trip_255x255_1x.jpg);
+  background-size: cover;
+  flex-direction: column;
+}
+.quest-photo {
+  height: 256px;
+  padding: 26px;
+  margin-bottom: 32px;
+  border-radius: 6px;
+  background: linear-gradient(
+      179.83deg,
+      rgba(196, 196, 196, 0) 35.34%,
+      #0a223d 99.85%
+    ),
+    url(../images/discovery_quest/discovery_quest_255x255_1x.jpg);
+  background-size: cover;
+  flex-direction: column;
 }
 .card__text {
-  margin-bottom: 12px;
+  position: absolute;
+  top: 50%;
+  left: 16%;
+  padding-right: 84px;
+  padding-bottom: 18px;
+}
+.main-btn {
+  position: absolute;
+  top: 70%;
+  left: 16%;
+}
+@include media-breakpoint-up(md) {
+  .newsletter-section__title {
+    padding: 60px 0;
+  }
+  .falls-photo {
+    margin: 0;
+  }
+  .quest-photo {
+    margin: 0;
+  }
+  .other-acrivities {
+    padding-bottom: 98px;
+  }
 }
