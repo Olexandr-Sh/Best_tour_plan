@@ -1,0 +1,29 @@
+.footer-section {
+  background: $second-color;
+  padding-top: 108px;
+  padding-bottom: 46px;
+}
+.footer-list-wrap {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.footer-list-wrap__item-ltl-list {
+  list-style-type: none;
+  flex-direction: column;
+  padding: 26px 26px 0;
+}
+.footer-contacts {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 26px 26px 0;
+}
+.footer-contacts__location {
+  padding-bottom: 24px;
+}
+.footer-contacts__phone {
+  padding-bottom: 24px;
+}

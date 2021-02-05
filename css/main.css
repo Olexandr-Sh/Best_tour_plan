@@ -2141,6 +2141,33 @@ button:focus {
   color: #fff;
 }
 
+.footer-list-wrap__item-ltl-list {
+  color: #bdbdbd;
+}
+
+.footer-contacts {
+  color: #bdbdbd;
+}
+
+.footer-policy-payment {
+  color: #bdbdbd;
+}
+
+.footer-list-wrap__item-ltl-list-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.footer-list-wrap__item-ltl-list-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
 .search-form__button {
   width: 36px;
   height: 40px;
@@ -4222,5 +4249,53 @@ button:focus {
   .other-acrivities {
     padding-bottom: 98px;
   }
+}
+
+.footer-section {
+  background: #0a223d;
+  padding-top: 108px;
+  padding-bottom: 46px;
+}
+
+.footer-list-wrap {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-list-wrap__item-ltl-list {
+  list-style-type: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 26px 26px 0;
+}
+
+.footer-contacts {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 26px 26px 0;
+}
+
+.footer-contacts__location {
+  padding-bottom: 24px;
+}
+
+.footer-contacts__phone {
+  padding-bottom: 24px;
 }
 /*# sourceMappingURL=main.css.map */
