@@ -3707,7 +3707,7 @@ button:focus {
 .package-details__list {
   list-style-type: none;
   margin: 0;
-  padding: 26px 26px 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3728,6 +3728,10 @@ button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.package-details-main-list__item {
+  padding: 26px 26px 0;
 }
 
 @media (min-width: 768px) {
@@ -3756,6 +3760,7 @@ button:focus {
   }
   .package-details-main-list__item {
     width: 30%;
+    padding: 0;
   }
   .package-details {
     text-align: start;
@@ -3768,7 +3773,6 @@ button:focus {
     display: block;
     width: 100%;
     padding-top: 22px;
-    padding-bottom: 32px;
   }
   .second-list-item-col {
     padding-left: 52px;
@@ -3789,6 +3793,14 @@ button:focus {
 
 .other-packages-style {
   background-color: #f5fafe;
+}
+
+.white-line {
+  margin: 0;
+  height: 6px;
+  background-color: #fff;
+  width: 100%;
+  border: 0;
 }
 
 .other-packages {
@@ -3989,9 +4001,6 @@ button:focus {
   .other-packages__wraper-info {
     padding: 22px 14px 18px 24px;
   }
-  .second-main-wrap-img {
-    width: 60%;
-  }
   .main-wraper-media {
     width: 100%;
   }
@@ -4158,6 +4167,13 @@ button:focus {
           justify-content: center;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .newsletter-section {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 34, 61, 0.8)), to(rgba(10, 34, 61, 0.8))), url(../images/newsletter_bkg/newsletter_bkg_2880x520_2x.jpg);
+    background: linear-gradient(rgba(10, 34, 61, 0.8), rgba(10, 34, 61, 0.8)), url(../images/newsletter_bkg/newsletter_bkg_2880x520_2x.jpg);
+  }
+}
+
 .subscribe {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4184,10 +4200,22 @@ button:focus {
   position: relative;
 }
 
+.send-form__input::-webkit-input-placeholder {
+  color: #bdbdbd;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 .send-form__button {
   outline: none;
   position: absolute;
   margin-left: -10px;
+}
+
+.send-form__button-word {
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .newsletter-words {
@@ -4224,6 +4252,10 @@ button:focus {
   }
 }
 
+.other-activities {
+  background-color: #f5fafe;
+}
+
 .newsletter-section__title {
   padding: 20px 0 20px 10px;
 }
@@ -4254,6 +4286,12 @@ button:focus {
           flex-direction: column;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .curious-photo {
+    background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0a223d 99.85%), url(../images/curious_corner/curious_corner_510x510_2x.jpg);
+  }
+}
+
 .golf-photo {
   height: 256px;
   padding: 26px;
@@ -4265,6 +4303,12 @@ button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .golf-photo {
+    background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0a223d 99.85%), url(../images/golf/golf_510x510_2x.jpg);
+  }
 }
 
 .falls-photo {
@@ -4280,6 +4324,12 @@ button:focus {
           flex-direction: column;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .falls-photo {
+    background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0a223d 99.85%), url(../images/hiking_trip/hiking_trip_510x510_2x.jpg);
+  }
+}
+
 .quest-photo {
   height: 256px;
   padding: 26px;
@@ -4291,6 +4341,12 @@ button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .quest-photo {
+    background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0a223d 99.85%), url(../images/discovery_quest/discovery_quest_510x510_2x.jpg);
+  }
 }
 
 .card__text {
@@ -4317,7 +4373,7 @@ button:focus {
   .quest-photo {
     margin: 0;
   }
-  .other-acrivities {
+  .other-activities {
     padding-bottom: 98px;
   }
 }

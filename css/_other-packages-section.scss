@@ -1,6 +1,13 @@
 .other-packages-style {
   background-color: $bkg-color-1;
 }
+.white-line {
+  margin: 0;
+  height: 6px;
+  background-color: $bkg-tcolor-2;
+  width: 100%;
+  border: 0;
+}
 .other-packages {
   display: flex;
   flex-direction: column;
@@ -135,9 +142,6 @@
   }
   .other-packages__wraper-info {
     padding: 22px 14px 18px 24px;
-  }
-  .second-main-wrap-img {
-    width: 60%;
   }
   .main-wraper-media {
     width: 100%;

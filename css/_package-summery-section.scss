@@ -198,7 +198,7 @@
 .package-details__list {
   list-style-type: none;
   margin: 0;
-  padding: 26px 26px 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
 }
@@ -209,6 +209,9 @@
   padding-left: 36px;
   display: flex;
   align-items: center;
+}
+.package-details-main-list__item {
+  padding: 26px 26px 0;
 }
 @include media-breakpoint-up(md) {
   .package-details-main-list {
@@ -229,6 +232,7 @@
   }
   .package-details-main-list__item {
     width: 30%;
+    padding: 0;
   }
   .package-details {
     text-align: start;
@@ -241,7 +245,6 @@
     display: block;
     width: 100%;
     padding-top: 22px;
-    padding-bottom: 32px;
   }
   .second-list-item-col {
     padding-left: 52px;
