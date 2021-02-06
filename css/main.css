@@ -2371,6 +2371,20 @@ button:focus {
   border: 1px solid #fff;
 }
 
+.footer-link {
+  color: #bdbdbd;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-link:active {
+  color: #ec1f46;
+}
+
 @font-face {
   font-family: "icomoon";
   src: url("../icomoon/fonts/icomoon.woff") format("woff");
