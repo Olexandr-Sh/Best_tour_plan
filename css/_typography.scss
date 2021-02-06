@@ -250,12 +250,18 @@
 .footer-contacts {
   color: $icons-color;
 }
-.footer-policy-payment {
-  color: $icons-color;
+.footer-policy-payment__wrap-text {
+  color: $bkg-tcolor-2;
+  font-size: 12px;
+  line-height: 15px;
+}
+.footer-policy-payment__wrap-text:hover,
+.footer-policy-payment__wrap-text:focus {
+  color: $bkg-tcolor-2;
 }
 .footer-list-wrap__item-ltl-list-item {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 23px;
 }
 .footer-list-wrap__item-ltl-list-title {
@@ -263,6 +269,13 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
-  margin: 0;
-  padding-bottom: 20px;
+}
+.footer-btn-wrap__text {
+  padding-top: 20px;
+}
+@include media-breakpoint-up(xl) {
+  .footer-contacts__item-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }

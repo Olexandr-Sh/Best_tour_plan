@@ -136,3 +136,24 @@
   color: $bkg-tcolor-2;
   border: 1px solid $bkg-tcolor-2;
 }
+.footer-btn {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 4px;
+  color: $bkg-tcolor-2;
+  background-color: $prime-color;
+  padding: 18px 66px;
+  border: 1px solid transparent;
+}
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: $bkg-tcolor-2;
+  color: $prime-color;
+  border: 1px solid $prime-color;
+}
+.footer-btn:active {
+  background-color: $second-color;
+  color: $bkg-tcolor-2;
+  border: 1px solid $bkg-tcolor-2;
+}
