@@ -2065,14 +2065,14 @@ button:focus {
   }
 }
 
-.hotel-blue-haven__txt {
+.hotel-information-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   color: #fff;
 }
 
-.hotel-blue-haven__big-txt {
+.hotel-btn-price__large-numbers {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -2132,14 +2132,15 @@ button:focus {
   color: #fff;
 }
 
-.newsletter-words__newsletter {
+.newsletter-words__title {
   font-weight: 600;
   font-size: 36px;
   line-height: 45px;
   color: #fff;
+  margin: 0;
 }
 
-.newsletter-section__title {
+.other-activities__title {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -2147,7 +2148,7 @@ button:focus {
   margin: 0;
 }
 
-.card__text {
+.card-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -2180,6 +2181,13 @@ button:focus {
 }
 
 .footer-list-wrap__item-ltl-list-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.footer-titles {
   color: #fff;
   font-weight: 700;
   font-size: 18px;
@@ -2557,7 +2565,7 @@ button:focus {
   padding-right: 8px;
 }
 
-.hotel-blue-haven__icon {
+.hotel-icon {
   color: #fff;
   font-size: 14px;
 }
@@ -3941,7 +3949,7 @@ button:focus {
   padding-bottom: 26px;
 }
 
-.hotel-blue-haven__icon {
+.hotel-icon {
   padding-right: 14px;
 }
 
@@ -4293,7 +4301,7 @@ button:focus {
   background-color: #f5fafe;
 }
 
-.newsletter-section__title {
+.other-activities__title {
   padding: 20px 0 20px 10px;
 }
 
@@ -4386,7 +4394,7 @@ button:focus {
   }
 }
 
-.card__text {
+.card-text {
   position: absolute;
   top: 50%;
   left: 16%;
@@ -4401,7 +4409,7 @@ button:focus {
 }
 
 @media (min-width: 768px) {
-  .newsletter-section__title {
+  .other-activities__title {
     padding: 60px 0;
   }
   .falls-photo {
@@ -4459,6 +4467,11 @@ button:focus {
 }
 
 .footer-list-wrap__item-ltl-list-title {
+  margin: 0;
+  padding: 20px 0 20px;
+}
+
+.footer-titles {
   margin: 0;
   padding: 20px 0 20px;
 }
@@ -4602,7 +4615,7 @@ button:focus {
   .footer-list-wrap__item {
     width: 50%;
   }
-  .addition-footer-style {
+  .footer-titles {
     text-align: center;
   }
   .footer-btn-wrap {
@@ -4637,7 +4650,7 @@ button:focus {
   .footer-contacts__item:last-child {
     padding-right: 0;
   }
-  .addition-footer-style {
+  .footer-titles {
     text-align: start;
   }
 }
@@ -4660,6 +4673,9 @@ button:focus {
   .footer-list-wrap__item-ltl-list-title {
     padding: 0 0 34px;
   }
+  .footer-titles {
+    padding: 0 0 34px;
+  }
   .footer-list-wrap__item-ltl-list-item {
     padding-bottom: 4px;
   }
@@ -4669,7 +4685,7 @@ button:focus {
     display: flex;
     padding-top: 24px;
   }
-  .footer-list-wrap__item-icons--links {
+  .footer-list-wrap__item-icons-links {
     padding-left: 42px;
   }
   .footer-contacts {

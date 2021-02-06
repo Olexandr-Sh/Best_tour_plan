@@ -178,13 +178,13 @@
     line-height: 18px;
   }
 }
-.hotel-blue-haven__txt {
+.hotel-information-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   color: $bkg-tcolor-2;
 }
-.hotel-blue-haven__big-txt {
+.hotel-btn-price__large-numbers {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -236,20 +236,21 @@
   line-height: 30px;
   color: $bkg-tcolor-2;
 }
-.newsletter-words__newsletter {
+.newsletter-words__title {
   font-weight: 600;
   font-size: 36px;
   line-height: 45px;
   color: $bkg-tcolor-2;
+  margin: 0;
 }
-.newsletter-section__title {
+.other-activities__title {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: $tcolor-2;
   margin: 0;
 }
-.card__text {
+.card-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -276,6 +277,12 @@
   line-height: 23px;
 }
 .footer-list-wrap__item-ltl-list-title {
+  color: $bkg-tcolor-2;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+.footer-titles {
   color: $bkg-tcolor-2;
   font-weight: 700;
   font-size: 18px;
