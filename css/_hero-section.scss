@@ -133,7 +133,7 @@
   }
 }
 @include media-breakpoint-up(md) {
-  .other-options__btn {
+  .other-wraper__btn-options {
     padding: 14px 84px;
   }
 }
@@ -174,7 +174,7 @@
   .map-style {
     height: 208px;
   }
-  .other-options__btn {
+  .other-wraper__btn-options {
     padding: 14px 82px;
   }
   .other-options__room-hotel {

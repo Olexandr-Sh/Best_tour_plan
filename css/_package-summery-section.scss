@@ -76,7 +76,15 @@
   background-color: $second-color;
   border-radius: 4px 4px 0px 0px;
 }
+.package-details__header {
+  background-color: $second-color;
+  border-radius: 4px 4px 0px 0px;
+}
 .info-card__title {
+  padding: 16px 24px;
+  margin: 0;
+}
+.package-details__title {
   padding: 16px 24px;
   margin: 0;
 }
@@ -116,7 +124,7 @@
 .second-list-text {
   padding-right: 30px;
 }
-.offer-details__second {
+.offer-details {
   display: flex;
   flex-direction: column;
 }
@@ -124,7 +132,7 @@
   padding-bottom: 34px;
   padding-right: 20px;
 }
-.offer-details__calendar {
+.info-card__offer-list-item-calendar {
   font-size: 16px;
   color: $tcolor-1;
   justify-content: center;
@@ -133,7 +141,7 @@
   left: 0;
   align-self: center;
 }
-.offer-details__list {
+.info-card__offer-list {
   list-style-type: none;
   margin: 0;
   padding: 26px 26px 0;
@@ -141,7 +149,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.offer-details__list-item {
+.info-card__offer-list-item {
   padding-bottom: 18px;
   color: $tcolor-1;
   position: relative;
@@ -150,12 +158,12 @@
   align-items: center;
 }
 @include media-breakpoint-up(sm) {
-  .offer-details__list {
+  .info-card__offer-list {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
   }
-  .offer-details__list-item {
+  .info-card__offer-list-item {
     width: 50%;
   }
   .offer-details__second-t {
@@ -174,7 +182,7 @@
   .info-card__list-item {
     padding-left: 36px;
   }
-  .offer-details__list-item {
+  .info-card__offer-list-item {
     width: 48%;
   }
   .offer-details__second-t {

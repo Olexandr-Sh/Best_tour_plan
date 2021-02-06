@@ -34,7 +34,7 @@
   color: $bkg-tcolor-2;
   border: 1px solid $bkg-tcolor-2;
 }
-.other-options__btn {
+.other-wraper__btn-options {
   background-color: $prime-color;
   color: $bkg-tcolor-2;
   border-radius: 4px;
@@ -45,13 +45,13 @@
   border: 1px solid $prime-color;
   align-self: center;
 }
-.other-options__btn:hover,
-.other-options__btn:focus {
+.other-wraper__btn-options:hover,
+.other-wraper__btn-options:focus {
   background-color: $bkg-tcolor-2;
   color: $prime-color;
   border: 1px solid $prime-color;
 }
-.other-options__btn:active {
+.other-wraper__btn-options:active {
   background-color: $second-color;
   color: $bkg-tcolor-2;
   border: 1px solid $bkg-tcolor-2;

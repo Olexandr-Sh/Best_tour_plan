@@ -1998,20 +1998,33 @@ button:focus {
   color: #fff;
 }
 
+.package-details__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+
 .info-card__list-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
 }
 
-.offer-details__list-text {
+.list-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.info-card__offer-list-item-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
 }
 
 @media (min-width: 1200px) {
-  .offer-details__list-text {
+  .info-card__offer-list-item-text {
     font-size: 14px;
     line-height: 18px;
   }
@@ -2227,7 +2240,7 @@ button:focus {
   border: 1px solid #fff;
 }
 
-.other-options__btn {
+.other-wraper__btn-options {
   background-color: #ec1f46;
   color: #fff;
   border-radius: 4px;
@@ -2241,14 +2254,14 @@ button:focus {
       align-self: center;
 }
 
-.other-options__btn:hover,
-.other-options__btn:focus {
+.other-wraper__btn-options:hover,
+.other-wraper__btn-options:focus {
   background-color: #fff;
   color: #ec1f46;
   border: 1px solid #ec1f46;
 }
 
-.other-options__btn:active {
+.other-wraper__btn-options:active {
   background-color: #0a223d;
   color: #fff;
   border: 1px solid #fff;
@@ -3330,7 +3343,7 @@ button:focus {
 }
 
 @media (min-width: 768px) {
-  .other-options__btn {
+  .other-wraper__btn-options {
     padding: 14px 84px;
   }
 }
@@ -3382,7 +3395,7 @@ button:focus {
   .map-style {
     height: 208px;
   }
-  .other-options__btn {
+  .other-wraper__btn-options {
     padding: 14px 82px;
   }
   .other-options__room-hotel {
@@ -3541,7 +3554,17 @@ button:focus {
   border-radius: 4px 4px 0px 0px;
 }
 
+.package-details__header {
+  background-color: #0a223d;
+  border-radius: 4px 4px 0px 0px;
+}
+
 .info-card__title {
+  padding: 16px 24px;
+  margin: 0;
+}
+
+.package-details__title {
   padding: 16px 24px;
   margin: 0;
 }
@@ -3603,7 +3626,7 @@ button:focus {
   padding-right: 30px;
 }
 
-.offer-details__second {
+.offer-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3618,7 +3641,7 @@ button:focus {
   padding-right: 20px;
 }
 
-.offer-details__calendar {
+.info-card__offer-list-item-calendar {
   font-size: 16px;
   color: #333;
   -webkit-box-pack: center;
@@ -3633,7 +3656,7 @@ button:focus {
       align-self: center;
 }
 
-.offer-details__list {
+.info-card__offer-list {
   list-style-type: none;
   margin: 0;
   padding: 26px 26px 0;
@@ -3647,7 +3670,7 @@ button:focus {
           justify-content: space-between;
 }
 
-.offer-details__list-item {
+.info-card__offer-list-item {
   padding-bottom: 18px;
   color: #333;
   position: relative;
@@ -3661,7 +3684,7 @@ button:focus {
 }
 
 @media (min-width: 576px) {
-  .offer-details__list {
+  .info-card__offer-list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -3672,7 +3695,7 @@ button:focus {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .offer-details__list-item {
+  .info-card__offer-list-item {
     width: 50%;
   }
   .offer-details__second-t {
@@ -3693,7 +3716,7 @@ button:focus {
   .info-card__list-item {
     padding-left: 36px;
   }
-  .offer-details__list-item {
+  .info-card__offer-list-item {
     width: 48%;
   }
   .offer-details__second-t {

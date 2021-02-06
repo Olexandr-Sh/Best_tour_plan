@@ -121,18 +121,29 @@
   line-height: 18px;
   color: $bkg-tcolor-2;
 }
+.package-details__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: $bkg-tcolor-2;
+}
 .info-card__list-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
 }
-.offer-details__list-text {
+.list-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+.info-card__offer-list-item-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
 }
 @include media-breakpoint-up(xl) {
-  .offer-details__list-text {
+  .info-card__offer-list-item-text {
     font-size: 14px;
     line-height: 18px;
   }
