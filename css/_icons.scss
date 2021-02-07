@@ -20,3 +20,70 @@
   font-size: 14px;
   padding-right: 8px;
 }
+.hotel-icon {
+  color: $bkg-tcolor-2;
+  font-size: 14px;
+}
+.what-section-chevron {
+  color: $arrows;
+}
+.icon-vector_1 {
+  visibility: hidden;
+}
+.icon-vector_2 {
+  visibility: hidden;
+}
+@include media-breakpoint-up(lg) {
+  .icon-vector_1 {
+    visibility: visible;
+    font-size: 40px;
+    color: $quotes;
+    opacity: 0.4;
+    position: absolute;
+    left: 25%;
+    top: 118px;
+  }
+  .icon-vector_2 {
+    visibility: visible;
+    font-size: 40px;
+    color: $quotes;
+    opacity: 0.4;
+    position: relative;
+    left: 45%;
+    top: 140px;
+    z-index: 0;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .icon-vector_1 {
+    top: 108px;
+  }
+  .icon-vector_2 {
+    top: 118px;
+  }
+}
+.footer-icon-position {
+  color: $icons-color;
+  padding-right: 12px;
+  font-size: 20px;
+}
+.footer-icon-position:hover,
+.footer-icon-position:focus {
+  color: $bkg-tcolor-2;
+  text-decoration: none;
+}
+.footer-icon-position:active {
+  color: $prime-color;
+}
+.footer-contacts__icon-position {
+  color: $icons-color;
+  padding-right: 10px;
+}
+.footer-contacts__icon-position:hover,
+.footer-contacts__icon-position:focus {
+  color: $bkg-tcolor-2;
+  text-decoration: none;
+}
+.footer-contacts__icon-position:active {
+  color: $prime-color;
+}

@@ -1,0 +1,175 @@
+.other-packages-style {
+  background-color: $bkg-color-1;
+}
+.white-line {
+  margin: 0;
+  height: 6px;
+  background-color: $bkg-tcolor-2;
+  width: 100%;
+  border: 0;
+}
+.other-packages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.other-packages__title {
+  margin: 0;
+  padding: 40px 0 64px;
+}
+.other-packages__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.other-packages__list-item {
+  padding-bottom: 30px;
+}
+.other-packages__wraper {
+  background-color: $second-color;
+  border-radius: 8px;
+}
+.other-packages__wraper-photo {
+  border-radius: 8px 8px 0 0;
+}
+.other-packages__wraper-image {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.other-packages__wraper-media {
+  position: relative;
+}
+.main-flash-offer {
+  background: $prime-color;
+  border-radius: 0px 4px 4px 0px;
+  color: $bkg-tcolor-2;
+  padding: 8px 12px;
+  position: absolute;
+  left: 0;
+  top: 26px;
+}
+.other-packages__wraper-info {
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+}
+.hotel-blue-haven-main-title {
+  margin: 0;
+  padding: 6px 0 26px;
+}
+.hotel-blue-haven-txt {
+  margin: 0;
+  padding-bottom: 24px;
+}
+.hotel-blue-haven-loc {
+  padding-bottom: 10px;
+}
+.hotel-blue-haven-user {
+  padding-bottom: 10px;
+}
+.hotel-blue-haven-room {
+  padding-bottom: 26px;
+}
+.hotel-icon {
+  padding-right: 14px;
+}
+.deleted-price {
+  align-self: flex-start;
+}
+.hotel-blue-haven-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.hotel-btn-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@include media-breakpoint-up(md) {
+  .main-wrap-img {
+    display: flex;
+  }
+  .second-main-wrap-img {
+    width: 50%;
+  }
+  .main-wraper-info {
+    width: 50%;
+  }
+  .other-packages__wraper-image {
+    padding-top: 0;
+  }
+  .other-packages__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .other-packages__list-item {
+    width: 48%;
+  }
+  .other-packages__list-item:first-child {
+    width: 100%;
+  }
+  .other-packages__wraper-info {
+    text-align: left;
+    padding: 30px 22px 26px 32px;
+  }
+  .main-wraper-photo {
+    height: 100%;
+  }
+  .hotel-blue-haven-btn {
+    align-items: center;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .other-packages__list-item {
+    width: 32%;
+  }
+  .other-packages__list-item:first-child {
+    width: 66%;
+  }
+  .hotel-blue-haven-main-title {
+    margin: 0;
+    padding: 6px 0 28px;
+  }
+  .hotel-blue-haven-txt {
+    padding-bottom: 34px;
+  }
+  .main-blue-haven-hotel-room {
+    padding-bottom: 56px;
+  }
+  .other-packages__wraper-info {
+    padding: 22px 14px 18px 24px;
+  }
+  .main-wraper-media {
+    width: 100%;
+  }
+  .main-wraper-photo {
+    width: 100%;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .other-packages__list-item {
+    width: 350px;
+  }
+  .second-main-wrap-img {
+    width: 50%;
+  }
+  .other-packages__wraper-info {
+    padding: 22px 20px 26px 32px;
+  }
+  .main-wraper-info {
+    padding: 40px 22px 30px 44px;
+  }
+  .hotel-blue-haven-room {
+    padding-bottom: 24px;
+  }
+  .main-blue-haven-hotel-room {
+    padding-bottom: 38px;
+  }
+  .small-box-title {
+    padding-bottom: 24px;
+  }
+}

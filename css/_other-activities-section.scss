@@ -1,0 +1,141 @@
+.other-activities {
+  background-color: $bkg-color-1;
+}
+.other-activities__title {
+  padding: 20px 0 20px 10px;
+}
+.card {
+  height: 256px;
+  padding: 26px;
+  margin-bottom: 32px;
+  border-radius: 6px;
+  background: linear-gradient(
+    179.83deg,
+    rgba(196, 196, 196, 0) 35.34%,
+    #0a223d 99.85%
+  );
+  background-size: cover;
+  flex-direction: column;
+}
+.curious-photo {
+  height: 256px;
+  padding: 26px;
+  margin-bottom: 32px;
+  border-radius: 6px;
+  background: linear-gradient(
+      179.83deg,
+      rgba(196, 196, 196, 0) 35.34%,
+      #0a223d 99.85%
+    ),
+    url(../images/curious_corner/curious_corner_255x255_1x.jpg);
+  background-size: cover;
+  flex-direction: column;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .curious-photo {
+    background: linear-gradient(
+        179.83deg,
+        rgba(196, 196, 196, 0) 35.34%,
+        #0a223d 99.85%
+      ),
+      url(../images/curious_corner/curious_corner_510x510_2x.jpg);
+  }
+}
+.golf-photo {
+  height: 256px;
+  padding: 26px;
+  margin-bottom: 32px;
+  border-radius: 6px;
+  background: linear-gradient(
+      179.83deg,
+      rgba(196, 196, 196, 0) 35.34%,
+      #0a223d 99.85%
+    ),
+    url(../images/golf/golf_255x255_1x.jpg);
+  background-size: cover;
+  flex-direction: column;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .golf-photo {
+    background: linear-gradient(
+        179.83deg,
+        rgba(196, 196, 196, 0) 35.34%,
+        #0a223d 99.85%
+      ),
+      url(../images/golf/golf_510x510_2x.jpg);
+  }
+}
+.falls-photo {
+  height: 256px;
+  padding: 26px;
+  margin-bottom: 32px;
+  border-radius: 6px;
+  background: linear-gradient(
+      179.83deg,
+      rgba(196, 196, 196, 0) 35.34%,
+      #0a223d 99.85%
+    ),
+    url(../images/hiking_trip/hiking_trip_255x255_1x.jpg);
+  background-size: cover;
+  flex-direction: column;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .falls-photo {
+    background: linear-gradient(
+        179.83deg,
+        rgba(196, 196, 196, 0) 35.34%,
+        #0a223d 99.85%
+      ),
+      url(../images/hiking_trip/hiking_trip_510x510_2x.jpg);
+  }
+}
+.quest-photo {
+  height: 256px;
+  padding: 26px;
+  margin-bottom: 32px;
+  border-radius: 6px;
+  background: linear-gradient(
+      179.83deg,
+      rgba(196, 196, 196, 0) 35.34%,
+      #0a223d 99.85%
+    ),
+    url(../images/discovery_quest/discovery_quest_255x255_1x.jpg);
+  background-size: cover;
+  flex-direction: column;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .quest-photo {
+    background: linear-gradient(
+        179.83deg,
+        rgba(196, 196, 196, 0) 35.34%,
+        #0a223d 99.85%
+      ),
+      url(../images/discovery_quest/discovery_quest_510x510_2x.jpg);
+  }
+}
+.card-text {
+  position: absolute;
+  top: 50%;
+  left: 16%;
+  padding-right: 84px;
+  padding-bottom: 18px;
+}
+.main-btn {
+  position: absolute;
+  top: 70%;
+  left: 16%;
+}
+@include media-breakpoint-up(md) {
+  .other-activities__title {
+    padding: 60px 0;
+  }
+  .falls-photo {
+    margin: 0;
+  }
+  .quest-photo {
+    margin: 0;
+  }
+  .other-activities {
+    padding-bottom: 98px;
+  }
+}

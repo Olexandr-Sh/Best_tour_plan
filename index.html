@@ -233,7 +233,7 @@
                         type="image/jpeg" />
                       <img
                         src="./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.jpg"
-                        class="d-block w-100"
+                        class="d-block w-100 carousel-item-image-wrap__img"
                         alt="grand hilton hotel"
                     /></picture>
                   </div>
@@ -295,7 +295,7 @@
                         type="image/jpeg" />
                       <img
                         src="./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.jpg"
-                        class="d-block w-100"
+                        class="d-block w-100 carousel-item-image-wrap__img"
                         alt="grand hilton hotel"
                     /></picture>
                   </div>
@@ -357,13 +357,14 @@
                         type="image/jpeg" />
                       <img
                         src="./images/grand_hilton_hotel/grand_hilton_hotel_728x450_1x.jpg"
-                        class="d-block w-100"
+                        class="d-block w-100 carousel-item-image-wrap__img"
                         alt="grand hilton hotel"
                     /></picture>
                   </div>
                 </div>
                 <a
                   class="carousel-control-prev"
+                  aria-label="flip the image to the left"
                   href="#carouselExampleInterval"
                   role="button"
                   data-slide="prev"
@@ -372,6 +373,7 @@
                 </a>
                 <a
                   class="carousel-control-next"
+                  aria-label="flip the image to the right"
                   href="#carouselExampleInterval"
                   role="button"
                   data-slide="next"
@@ -407,7 +409,7 @@
                   </div>
                 </div>
               </div>
-              <button class="other-options__btn" href="#">
+              <button class="other-wraper__btn-options">
                 View Other Options
               </button>
             </div>
@@ -469,9 +471,7 @@
                         aria-hidden="true"
                       ></span>
                     </div>
-                    <span class="info-card__list-text"
-                      >Half Board/ All Inclusive</span
-                    >
+                    <span class="list-text">Half Board/ All Inclusive</span>
                   </li>
                   <li class="info-card__list-item">
                     <div class="gray-bullet">
@@ -480,7 +480,7 @@
                         aria-hidden="true"
                       ></span>
                     </div>
-                    <span class="info-card__list-text second-list-text"
+                    <span class="list-text second-list-text"
                       >Luxurious 5-Star Hotel</span
                     >
                   </li>
@@ -523,15 +523,15 @@
                 <div class="info-card__header">
                   <h3 class="info-card__title">Offer Details</h3>
                 </div>
-                <ul class="offer-details__list">
-                  <li class="offer-details__list-item">
+                <ul class="info-card__offer-list">
+                  <li class="info-card__offer-list-item">
                     <div class="gray-bullet">
                       <span
                         class="icon-check-icon gray-bullet__icon"
                         aria-hidden="true"
                       ></span>
                     </div>
-                    <div class="offer-details__second">
+                    <div class="offer-details">
                       <span class="info-card__list-text offer-details__second-t"
                         >Benefit from a special discounted CHILL’OUT OFFER at
                         Grand Hilton Hotel.</span
@@ -541,11 +541,11 @@
                       >
                     </div>
                   </li>
-                  <li class="offer-details__list-item">
+                  <li class="info-card__offer-list-item">
                     <span
-                      class="icon-calendar-icon offer-details__calendar"
+                      class="icon-calendar-icon info-card__offer-list-item-calendar"
                     ></span>
-                    <span class="offer-details__list-text"
+                    <span class="info-card__offer-list-item-text"
                       >10th March - 30th April 2020</span
                     >
                   </li>
@@ -554,15 +554,17 @@
             </div>
             <div class="col">
               <div class="package-details">
-                <div class="info-card__header">
-                  <h3 class="info-card__title">Package Summery Details</h3>
+                <div class="package-details__header">
+                  <h3 class="package-details__title">
+                    Package Summery Details
+                  </h3>
                 </div>
                 <ul class="package-details-main-list">
                   <li class="package-details-main-list__item">
+                    <h4 class="package-details__list-title">
+                      Purchase Inclusions
+                    </h4>
                     <ul class="package-details__list">
-                      <h4 class="package-details__list-title">
-                        Purchase Inclusions
-                      </h4>
                       <li class="package-details__list-item">
                         <div class="gray-bullet">
                           <span
@@ -570,9 +572,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text"
-                          >Room as per selection</span
-                        >
+                        <span class="list-text">Room as per selection</span>
                       </li>
                       <li class="package-details__list-item">
                         <div class="gray-bullet">
@@ -581,7 +581,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text second-list-text"
+                        <span class="list-text second-list-text"
                           >Half Board or All Inclusive Meal Plan</span
                         >
                       </li>
@@ -592,7 +592,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text"
+                        <span class="list-text"
                           >Complimentary Land & Water activities</span
                         >
                       </li>
@@ -603,7 +603,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text"
+                        <span class="list-text"
                           >Child Under 11 years old stays free</span
                         >
                       </li>
@@ -614,7 +614,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text">Free Wi-Fi</span>
+                        <span class="list-text">Free Wi-Fi</span>
                       </li>
                       <li class="package-details__list-item">
                         <div class="gray-bullet">
@@ -623,19 +623,17 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text"
-                          >Free Secure Parking</span
-                        >
+                        <span class="list-text">Free Secure Parking</span>
                       </li>
                     </ul>
                   </li>
                   <li
                     class="package-details-main-list__item second-list-item-col"
                   >
+                    <h4 class="package-details__list-title">
+                      Complimentary Land Based Activities
+                    </h4>
                     <ul class="package-details__list">
-                      <h4 class="package-details__list-title">
-                        Complimentary Land Based Activities
-                      </h4>
                       <li class="package-details__list-item">
                         <div class="gray-bullet">
                           <span
@@ -643,7 +641,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text">Gym</span>
+                        <span class="list-text">Gym</span>
                       </li>
                       <li class="package-details__list-item">
                         <div class="gray-bullet">
@@ -652,7 +650,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text second-list-text"
+                        <span class="list-text second-list-text"
                           >Beach Volley</span
                         >
                       </li>
@@ -663,7 +661,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text">Table tennis</span>
+                        <span class="list-text">Table tennis</span>
                       </li>
                       <li class="package-details__list-item">
                         <div class="gray-bullet">
@@ -672,7 +670,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text">Soccer balls</span>
+                        <span class="list-text">Soccer balls</span>
                       </li>
                       <li class="package-details__list-item">
                         <div class="gray-bullet">
@@ -681,7 +679,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text">Yoga</span>
+                        <span class="list-text">Yoga</span>
                       </li>
                       <li class="package-details__list-item">
                         <div class="gray-bullet">
@@ -690,7 +688,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text"
+                        <span class="list-text"
                           >Unlimited access to driving range</span
                         >
                       </li>
@@ -699,10 +697,10 @@
                   <li
                     class="package-details-main-list__item third-list-item-col"
                   >
+                    <h4 class="package-details__list-title">
+                      Complimentary Water Based Activities
+                    </h4>
                     <ul class="package-details__list">
-                      <h4 class="package-details__list-title">
-                        Complimentary Water Based Activities
-                      </h4>
                       <li class="package-details__list-item">
                         <div class="gray-bullet">
                           <span
@@ -710,7 +708,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text">Water skiing</span>
+                        <span class="list-text">Water skiing</span>
                       </li>
                       <li class="package-details__list-item">
                         <div class="gray-bullet">
@@ -719,7 +717,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text second-list-text"
+                        <span class="list-text second-list-text"
                           >Windsurfing</span
                         >
                       </li>
@@ -730,7 +728,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text">Pedal boats</span>
+                        <span class="list-text">Pedal boats</span>
                       </li>
                       <li class="package-details__list-item">
                         <div class="gray-bullet">
@@ -739,7 +737,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text">Kayaking</span>
+                        <span class="list-text">Kayaking</span>
                       </li>
                       <li class="package-details__list-item">
                         <div class="gray-bullet">
@@ -748,7 +746,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text">Aqua Gym</span>
+                        <span class="list-text">Aqua Gym</span>
                       </li>
                       <li class="package-details__list-item">
                         <div class="gray-bullet">
@@ -757,18 +755,16 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text"
-                          >Glass bottom boat trips</span
-                        >
+                        <span class="list-text">Glass bottom boat trips</span>
                       </li>
                     </ul>
                   </li>
-                  <span class="line"></span>
+                  <li class="line"></li>
                   <li class="package-details-main-list__item">
+                    <h4 class="package-details__list-title">
+                      Meal Plan Available
+                    </h4>
                     <ul class="package-details__list">
-                      <h4 class="package-details__list-title">
-                        Meal Plan Available
-                      </h4>
                       <li class="package-details__list-item">
                         <div class="gray-bullet">
                           <span
@@ -776,7 +772,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text">Half Board</span>
+                        <span class="list-text">Half Board</span>
                       </li>
                       <li class="package-details__list-item">
                         <div class="gray-bullet">
@@ -785,15 +781,15 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text">All Inclusive</span>
+                        <span class="list-text">All Inclusive</span>
                       </li>
                     </ul>
                   </li>
                   <li
                     class="package-details-main-list__item second-list-item-col"
                   >
+                    <h4 class="package-details__list-title">Entertainment</h4>
                     <ul class="package-details__list">
-                      <h4 class="package-details__list-title">Entertainment</h4>
                       <li class="package-details__list-item">
                         <div class="gray-bullet">
                           <span
@@ -801,7 +797,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text">Live music</span>
+                        <span class="list-text">Live music</span>
                       </li>
                       <li class="package-details__list-item">
                         <div class="gray-bullet">
@@ -810,19 +806,17 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text"
-                          >DJ & Mauritian Dance Show</span
-                        >
+                        <span class="list-text">DJ & Mauritian Dance Show</span>
                       </li>
                     </ul>
                   </li>
                   <li
                     class="package-details-main-list__item third-list-item-col"
                   >
+                    <h4 class="package-details__list-title">
+                      Check In & Check Out
+                    </h4>
                     <ul class="package-details__list">
-                      <h4 class="package-details__list-title">
-                        Check In & Check Out
-                      </h4>
                       <li class="package-details__list-item">
                         <div class="gray-bullet">
                           <span
@@ -830,9 +824,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text"
-                          >Check In Time 14:00</span
-                        >
+                        <span class="list-text">Check In Time 14:00</span>
                       </li>
                       <li class="package-details__list-item">
                         <div class="gray-bullet">
@@ -841,9 +833,7 @@
                             aria-hidden="true"
                           ></span>
                         </div>
-                        <span class="info-card__list-text"
-                          >Check Out Time 11:00</span
-                        >
+                        <span class="list-text">Check Out Time 11:00</span>
                       </li>
                     </ul>
                   </li>
@@ -854,6 +844,1155 @@
         </div>
       </div>
     </section>
+    <section class="other-packages-style">
+      <hr class="white-line" />
+      <div class="container">
+        <div class="other-packages">
+          <h2 class="other-packages__title">OTHER PACKAGES</h2>
+          <ul class="other-packages__list">
+            <li class="other-packages__list-item">
+              <div class="other-packages__wraper main-wrap-img">
+                <div class="other-packages__wraper-image second-main-wrap-img">
+                  <div class="other-packages__wraper-media">
+                    <picture class="main-wraper-media">
+                      <source
+                        srcset="
+                          ./images/hotel_blue_haven/hotel_blue_haven_366x500_1x.webp  1x,
+                          ./images/hotel_blue_haven/hotel_blue_haven_732x1000_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel_blue_haven/hotel_blue_haven_366x500_1x.jpg  1x,
+                          ./images/hotel_blue_haven/hotel_blue_haven_732x1000_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel_blue_haven/hotel_blue_haven_(992)_307x419_1x.webp 1x,
+                          ./images/hotel_blue_haven/hotel_blue_haven_(992)_614x839_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 992px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel_blue_haven/hotel_blue_haven_(992)_307x419_1x.jpg 1x,
+                          ./images/hotel_blue_haven/hotel_blue_haven_(992)_614x839_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 992px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel_blue_haven/hotel_blue_haven_(768)_345x471_1x.webp 1x,
+                          ./images/hotel_blue_haven/hotel_blue_haven_(768)_690x943_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel_blue_haven/hotel_blue_haven_(768)_345x471_1x.jpg 1x,
+                          ./images/hotel_blue_haven/hotel_blue_haven_(768)_690x943_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel_blue_haven/hotel_blue_haven_(320)_273x373_1x.webp 1x,
+                          ./images/hotel_blue_haven/hotel_blue_haven_(320)_546x746_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 320px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel_blue_haven/hotel_blue_haven_(320)_273x373_1x.jpg 1x,
+                          ./images/hotel_blue_haven/hotel_blue_haven_(320)_546x746_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 320px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel_blue_haven/hotel_blue_haven_366x500_1x.webp  1x,
+                          ./images/hotel_blue_haven/hotel_blue_haven_732x1000_2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel_blue_haven/hotel_blue_haven_366x500_1x.jpg  1x,
+                          ./images/hotel_blue_haven/hotel_blue_haven_732x1000_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                      />
+                      <img
+                        class="other-packages__wraper-photo main-wraper-photo"
+                        src="./images/hotel_blue_haven/hotel_blue_haven_366x500_1x.jpg"
+                        alt="hotel blue haven"
+                      />
+                    </picture>
+                    <span class="main-flash-offer">Flash Offer</span>
+                  </div>
+                </div>
+                <div class="other-packages__wraper-info main-wraper-info">
+                  <div class="gold-stars">
+                    <span class="icon-golden-star gold-stars__style"></span>
+                    <span class="icon-golden-star gold-stars__style"></span>
+                    <span class="icon-golden-star gold-stars__style"></span>
+                    <span class="icon-golden-star gold-stars__style"></span>
+                    <span class="icon-golden-star gold-stars__style"></span>
+                  </div>
+                  <h3 class="hotel-blue-haven-main-title">Hotel Blue Haven</h3>
+                  <p class="hotel-blue-haven-txt">
+                    Aute quis duis excepteur excepteur ipsum cat eiusmod
+                    consectetur enim laborum magna llit. Ipsum est fugiat velit
+                    ea llamco do esse ut in veniam sun in onsequat. Aute quis
+                    duis epteur excepteur ipsum occaecat eiusmod nsectetur enim
+                    laborum magna mollit. Ipsum est fugiat velit ea ullamco do
+                  </p>
+                  <div class="hotel-blue-haven-loc">
+                    <span class="icon-map-pin-icon hotel-icon"></span>
+                    <span class="hotel-information-text"
+                      >1749 Wheeler Ridge Delaware</span
+                    >
+                  </div>
+                  <div class="hotel-blue-haven-user">
+                    <span class="icon-user-icon hotel-icon"></span>
+                    <span class="hotel-information-text">2 x Guests</span>
+                  </div>
+                  <div class="hotel-blue-haven-room main-blue-haven-hotel-room">
+                    <span class="icon-home-icon hotel-icon"></span>
+                    <span class="hotel-information-text">1 x Room</span>
+                  </div>
+                  <span class="hotel-information-text deleted-price"
+                    ><del>&#36; 10,500</del></span
+                  >
+                  <div class="hotel-blue-haven-btn">
+                    <div class="hotel-btn-price">
+                      <span class="hotel-btn-price__large-numbers"
+                        >&#36; 8,500</span
+                      >
+                    </div>
+                    <button
+                      class="other-packages-btn"
+                      aria-label="book now room in blue haven hotel"
+                    >
+                      Book Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="other-packages__list-item">
+              <div class="other-packages__wraper">
+                <div class="other-packages__wraper-image">
+                  <div class="other-packages__wraper-media">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/lux_belle_mare/lux_belle_mare_350x250_1x.webp 1x,
+                          ./images/lux_belle_mare/lux_belle_mare_700x500_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/lux_belle_mare/lux_belle_mare_350x250_1x.jpg 1x,
+                          ./images/lux_belle_mare/lux_belle_mare_700x500_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/lux_belle_mare/lux_belle_mare_(992)_298x213_1x.webp 1x,
+                          ./images/lux_belle_mare/lux_belle_mare_(992)_596x426_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 992px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/lux_belle_mare/lux_belle_mare_(992)_298x213_1x.jpg 1x,
+                          ./images/lux_belle_mare/lux_belle_mare_(992)_596x426_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 992px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/lux_belle_mare/lux_belle_mare_(768)_331x236_1x.webp 1x,
+                          ./images/lux_belle_mare/lux_belle_mare_(768)_662x473_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/lux_belle_mare/lux_belle_mare_(768)_331x236_1x.jpg 1x,
+                          ./images/lux_belle_mare/lux_belle_mare_(768)_662x473_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/lux_belle_mare/lux_belle_mare_(320)_273x195_1x.webp 1x,
+                          ./images/lux_belle_mare/lux_belle_mare_(320)_546x390_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 320px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/lux_belle_mare/lux_belle_mare_(320)_273x195_1x.jpg 1x,
+                          ./images/lux_belle_mare/lux_belle_mare_(320)_546x390_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 320px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/lux_belle_mare/lux_belle_mare_350x250_1x.webp 1x,
+                          ./images/lux_belle_mare/lux_belle_mare_700x500_2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/lux_belle_mare/lux_belle_mare_350x250_1x.jpg 1x,
+                          ./images/lux_belle_mare/lux_belle_mare_700x500_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                      />
+                      <img
+                        class="other-packages__wraper-photo"
+                        src="./images/lux_belle_mare/lux_belle_mare_350x250_1x.jpg"
+                        alt="hotel Lux belle mare"
+                      />
+                    </picture>
+                    <span class="main-flash-offer">Flash Offer</span>
+                  </div>
+                </div>
+                <div class="other-packages__wraper-info">
+                  <h3 class="hotel-blue-haven-main-title small-box-title">
+                    LUX* Belle Mare
+                  </h3>
+                  <div class="hotel-blue-haven-loc">
+                    <span class="icon-map-pin-icon hotel-icon"></span>
+                    <span class="hotel-information-text"
+                      >1749 Wheeler Ridge Delaware</span
+                    >
+                  </div>
+                  <div class="hotel-blue-haven-user">
+                    <span class="icon-user-icon hotel-icon"></span>
+                    <span class="hotel-information-text">2 x Guests</span>
+                  </div>
+                  <div class="hotel-blue-haven-room">
+                    <span class="icon-home-icon hotel-icon"></span>
+                    <span class="hotel-information-text">1 x Room</span>
+                  </div>
+                  <span class="hotel-information-text deleted-price"
+                    ><del>&#36; 8,500</del></span
+                  >
+                  <div class="hotel-blue-haven-btn">
+                    <div class="hotel-btn-price">
+                      <span class="hotel-btn-price__large-numbers"
+                        >&#36; 3,000</span
+                      >
+                    </div>
+                    <button
+                      class="other-packages-btn"
+                      aria-label="book now room in lux belle mare hotel"
+                    >
+                      Book Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="other-packages__list-item">
+              <div class="other-packages__wraper">
+                <div class="other-packages__wraper-image">
+                  <div class="other-packages__wraper-media">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/white_palace/white_palace_350x250_1x.webp 1x,
+                          ./images/white_palace/white_palace_700x500_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/white_palace/white_palace_350x250_1x.jpg 1x,
+                          ./images/white_palace/white_palace_700x500_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/white_palace/white_palace_(992)_298x213_1x.webp 1x,
+                          ./images/white_palace/white_palace_(992)_596x426_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 992px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/white_palace/white_palace_(992)_298x213_1x.jpg 1x,
+                          ./images/white_palace/white_palace_(992)_596x426_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 992px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/white_palace/white_palace_(768)_331x236_1x.webp 1x,
+                          ./images/white_palace/white_palace_(768)_662x473_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/white_palace/white_palace_(768)_331x236_1x.jpg 1x,
+                          ./images/white_palace/white_palace_(768)_662x473_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/white_palace/white_palace_(320)_273x195_1x.webp 1x,
+                          ./images/white_palace/white_palace_(320)_546x390_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 320px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/white_palace/white_palace_(320)_273x195_1x.jpg 1x,
+                          ./images/white_palace/white_palace_(320)_546x390_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 320px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/white_palace/white_palace_350x250_1x.webp 1x,
+                          ./images/white_palace/white_palace_700x500_2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/white_palace/white_palace_350x250_1x.jpg 1x,
+                          ./images/white_palace/white_palace_700x500_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                      />
+                      <img
+                        class="other-packages__wraper-photo"
+                        src="./images/white_palace/white_palace_350x250_1x.jpg"
+                        alt="hotel white palace"
+                      />
+                    </picture>
+                    <span class="main-flash-offer">Flash Offer</span>
+                  </div>
+                </div>
+                <div class="other-packages__wraper-info">
+                  <h3 class="hotel-blue-haven-main-title small-box-title">
+                    White Palace
+                  </h3>
+                  <div class="hotel-blue-haven-loc">
+                    <span class="icon-map-pin-icon hotel-icon"></span>
+                    <span class="hotel-information-text"
+                      >1749 Wheeler Ridge Delaware</span
+                    >
+                  </div>
+                  <div class="hotel-blue-haven-user">
+                    <span class="icon-user-icon hotel-icon"></span>
+                    <span class="hotel-information-text">2 x Guests</span>
+                  </div>
+                  <div class="hotel-blue-haven-room">
+                    <span class="icon-home-icon hotel-icon"></span>
+                    <span class="hotel-information-text">1 x Room</span>
+                  </div>
+                  <span class="hotel-information-text deleted-price"
+                    ><del>&#36; 10,500</del></span
+                  >
+                  <div class="hotel-blue-haven-btn">
+                    <div class="hotel-btn-price">
+                      <span class="hotel-btn-price__large-numbers"
+                        >&#36; 9,500</span
+                      >
+                    </div>
+                    <button
+                      class="other-packages-btn"
+                      aria-label="book now room in white palace hotel"
+                    >
+                      Book Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="other-packages__list-item">
+              <div class="other-packages__wraper">
+                <div class="other-packages__wraper-image">
+                  <div class="other-packages__wraper-media">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/luxury_place/luxury_palace_350x250_1x.webp 1x,
+                          ./images/luxury_place/luxury_palace_700x500_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/luxury_place/luxury_palace_350x250_1x.jpg 1x,
+                          ./images/luxury_place/luxury_palace_700x500_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/luxury_place/luxury_palace_(992)_298x213_1x.webp 1x,
+                          ./images/luxury_place/luxury_palace_(992)_596x426_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 992px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/luxury_place/luxury_palace_(992)_298x213_1x.jpg 1x,
+                          ./images/luxury_place/luxury_palace_(992)_596x426_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 992px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/luxury_place/luxury_palace_(768)_331x236_1x.webp 1x,
+                          ./images/luxury_place/luxury_palace_(768)_662x473_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/luxury_place/luxury_palace_(768)_331x236_1x.jpg 1x,
+                          ./images/luxury_place/luxury_palace_(768)_662x473_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/luxury_place/luxury_palace_(320)_273x195_1x.webp 1x,
+                          ./images/luxury_place/luxury_palace_(320)_546x390_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 320px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/luxury_place/luxury_palace_(320)_273x195_1x.jpg 1x,
+                          ./images/luxury_place/luxury_palace_(320)_546x390_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 320px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/luxury_place/luxury_palace_350x250_1x.webp 1x,
+                          ./images/luxury_place/luxury_palace_700x500_2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/luxury_place/luxury_palace_350x250_1x.jpg 1x,
+                          ./images/luxury_place/luxury_palace_700x500_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                      />
+                      <img
+                        class="other-packages__wraper-photo"
+                        src="./images/luxury_place/luxury_palace_350x250_1x.jpg"
+                        alt="hotel luxury palace"
+                      />
+                    </picture>
+                    <span class="main-flash-offer">Flash Offer</span>
+                  </div>
+                </div>
+                <div class="other-packages__wraper-info">
+                  <h3 class="hotel-blue-haven-main-title small-box-title">
+                    Luxury Place
+                  </h3>
+                  <div class="hotel-blue-haven-loc">
+                    <span class="icon-map-pin-icon hotel-icon"></span>
+                    <span class="hotel-information-text"
+                      >1749 Wheeler Ridge Delaware</span
+                    >
+                  </div>
+                  <div class="hotel-blue-haven-user">
+                    <span class="icon-user-icon hotel-icon"></span>
+                    <span class="hotel-information-text">2 x Guests</span>
+                  </div>
+                  <div class="hotel-blue-haven-room">
+                    <span class="icon-home-icon hotel-icon"></span>
+                    <span class="hotel-information-text">1 x Room</span>
+                  </div>
+                  <span class="hotel-information-text deleted-price"
+                    ><del>&#36; 4,500</del></span
+                  >
+                  <div class="hotel-blue-haven-btn">
+                    <div class="hotel-btn-price">
+                      <span class="hotel-btn-price__large-numbers"
+                        >&#36; 2,500</span
+                      >
+                    </div>
+                    <button
+                      class="other-packages-btn"
+                      aria-label="book now room in luxury place hotel"
+                    >
+                      Book Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="other-packages__list-item">
+              <div class="other-packages__wraper">
+                <div class="other-packages__wraper-image">
+                  <div class="other-packages__wraper-media">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/hotel_five_star/hotel_five_star_350x250_1x.webp 1x,
+                          ./images/hotel_five_star/hotel_five_star_700x500_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel_five_star/hotel_five_star_350x250_1x.jpg 1x,
+                          ./images/hotel_five_star/hotel_five_star_700x500_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel_five_star/hotel_five_star_(992)_298x213_1x.webp 1x,
+                          ./images/hotel_five_star/hotel_five_star_(992)_596x426_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 992px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel_five_star/hotel_five_star_(992)_298x213_1x.jpg 1x,
+                          ./images/hotel_five_star/hotel_five_star_(992)_596x426_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 992px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel_five_star/hotel_five_star_(768)_331x236_1x.webp 1x,
+                          ./images/hotel_five_star/hotel_five_star_(768)_662x473_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel_five_star/hotel_five_star_(768)_331x236_1x.jpg 1x,
+                          ./images/hotel_five_star/hotel_five_star_(768)_662x473_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel_five_star/hotel_five_star_(320)_273x195_1x.webp 1x,
+                          ./images/hotel_five_star/hotel_five_star_(320)_546x390_2x.webp 2x
+                        "
+                        type="image/webp"
+                        media="(min-width: 320px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel_five_star/hotel_five_star_(320)_273x195_1x.jpg 1x,
+                          ./images/hotel_five_star/hotel_five_star_(320)_546x390_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 320px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel_five_star/hotel_five_star_350x250_1x.webp 1x,
+                          ./images/hotel_five_star/hotel_five_star_700x500_2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/hotel_five_star/hotel_five_star_350x250_1x.jpg 1x,
+                          ./images/hotel_five_star/hotel_five_star_700x500_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                      />
+                      <img
+                        class="other-packages__wraper-photo"
+                        src="./images/hotel_five_star/hotel_five_star_350x250_1x.jpg"
+                        alt="hotel five star"
+                      />
+                    </picture>
+                    <span class="main-flash-offer">Flash Offer</span>
+                  </div>
+                </div>
+                <div class="other-packages__wraper-info">
+                  <h3 class="hotel-blue-haven-main-title small-box-title">
+                    Hotel Five Star
+                  </h3>
+                  <div class="hotel-blue-haven-loc">
+                    <span class="icon-map-pin-icon hotel-icon"></span>
+                    <span class="hotel-information-text"
+                      >1749 Wheeler Ridge Delaware</span
+                    >
+                  </div>
+                  <div class="hotel-blue-haven-user">
+                    <span class="icon-user-icon hotel-icon"></span>
+                    <span class="hotel-information-text">2 x Guests</span>
+                  </div>
+                  <div class="hotel-blue-haven-room">
+                    <span class="icon-home-icon hotel-icon"></span>
+                    <span class="hotel-information-text">1 x Room</span>
+                  </div>
+                  <span class="hotel-information-text deleted-price"
+                    ><del>&#36; 6,500</del></span
+                  >
+                  <div class="hotel-blue-haven-btn">
+                    <div class="hotel-btn-price">
+                      <span class="hotel-btn-price__large-numbers"
+                        >&#36; 3,500</span
+                      >
+                    </div>
+                    <button
+                      class="other-packages-btn"
+                      aria-label="book now room in five star hotel"
+                    >
+                      Book Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="what-people-think">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 what-people-think__wraper">
+            <h2 class="what-people-think__wraper-title">
+              WHAT PEOPLE THINKS ABOUT US
+            </h2>
+            <div
+              id="carouselComments"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="10000">
+                  <div class="what-people-think__wraper-position">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/megan_fox_photo/megan_fox_90x90_1x.webp   1x,
+                          ./images/megan_fox_photo/megan_fox_180x180_2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/megan_fox_photo/megan_fox_90x90_1x.jpg   1x,
+                          ./images/megan_fox_photo/megan_fox_180x180_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                      />
+                      <img
+                        class="megan-fox-photo"
+                        src="./images/megan_fox_photo/megan_fox_90x90_1x.jpg"
+                        alt="Megan Fox photo"
+                      />
+                    </picture>
+                    <div class="comment">
+                      <span class="icon-vector_1"></span>
+                      <span class="icon-vector_2"></span>
+                      <h3 class="comment__title">Megan Fox</h3>
+                      <span class="comment__text">Stayed 18 Nov, 2019</span>
+                      <div class="gold-stars main-gold-stars-style">
+                        <span class="icon-golden-star gold-stars__style"></span>
+                        <span class="icon-golden-star gold-stars__style"></span>
+                        <span class="icon-golden-star gold-stars__style"></span>
+                        <span class="icon-golden-star gold-stars__style"></span>
+                        <span class="icon-golden-star gold-stars__style"></span>
+                      </div>
+                      <p class="comment__mega-text">
+                        It was very nice hotel with cleanliness. Staff behavior
+                        was good and polite. They welcome us very well. Issue
+                        was only that Lift was not in working and we were
+                        allotted to 3rd floor and amenities articles were in
+                        corner of gallery which were giving bad feeling.
+                        Breakfast was good and support of the staff was also
+                        very nice. Location is not good as per atmosphere, it is
+                        very nearby most of the popular places but self location
+                        in a narrow street is not good. Overall it was a good
+                        experience and could recommend.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                  <div class="what-people-think__wraper-position">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/megan_fox_photo/megan_fox_90x90_1x.webp   1x,
+                          ./images/megan_fox_photo/megan_fox_180x180_2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/megan_fox_photo/megan_fox_90x90_1x.jpg   1x,
+                          ./images/megan_fox_photo/megan_fox_180x180_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                      />
+                      <img
+                        class="megan-fox-photo"
+                        src="./images/megan_fox_photo/megan_fox_90x90_1x.jpg"
+                        alt="Megan Fox photo"
+                      />
+                    </picture>
+                    <div class="comment">
+                      <span class="icon-vector_1"></span>
+                      <span class="icon-vector_2"></span>
+                      <h3 class="comment__title">Megan Fox</h3>
+                      <span class="comment__text">Stayed 18 Nov, 2019</span>
+                      <div class="gold-stars main-gold-stars-style">
+                        <span class="icon-golden-star gold-stars__style"></span>
+                        <span class="icon-golden-star gold-stars__style"></span>
+                        <span class="icon-golden-star gold-stars__style"></span>
+                        <span class="icon-golden-star gold-stars__style"></span>
+                        <span class="icon-golden-star gold-stars__style"></span>
+                      </div>
+                      <p class="comment__mega-text">
+                        It was very nice hotel with cleanliness. Staff behavior
+                        was good and polite. They welcome us very well. Issue
+                        was only that Lift was not in working and we were
+                        allotted to 3rd floor and amenities articles were in
+                        corner of gallery which were giving bad feeling.
+                        Breakfast was good and support of the staff was also
+                        very nice. Location is not good as per atmosphere, it is
+                        very nearby most of the popular places but self location
+                        in a narrow street is not good. Overall it was a good
+                        experience and could recommend.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="what-people-think__wraper-position">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/megan_fox_photo/megan_fox_90x90_1x.webp   1x,
+                          ./images/megan_fox_photo/megan_fox_180x180_2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/megan_fox_photo/megan_fox_90x90_1x.jpg   1x,
+                          ./images/megan_fox_photo/megan_fox_180x180_2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                      />
+                      <img
+                        class="megan-fox-photo"
+                        src="./images/megan_fox_photo/megan_fox_90x90_1x.jpg"
+                        alt="Megan Fox photo"
+                      />
+                    </picture>
+                    <div class="comment">
+                      <span class="icon-vector_1"></span>
+                      <span class="icon-vector_2"></span>
+                      <h3 class="comment__title">Megan Fox</h3>
+                      <span class="comment__text">Stayed 18 Nov, 2019</span>
+                      <div class="gold-stars main-gold-stars-style">
+                        <span class="icon-golden-star gold-stars__style"></span>
+                        <span class="icon-golden-star gold-stars__style"></span>
+                        <span class="icon-golden-star gold-stars__style"></span>
+                        <span class="icon-golden-star gold-stars__style"></span>
+                        <span class="icon-golden-star gold-stars__style"></span>
+                      </div>
+                      <p class="comment__mega-text">
+                        It was very nice hotel with cleanliness. Staff behavior
+                        was good and polite. They welcome us very well. Issue
+                        was only that Lift was not in working and we were
+                        allotted to 3rd floor and amenities articles were in
+                        corner of gallery which were giving bad feeling.
+                        Breakfast was good and support of the staff was also
+                        very nice. Location is not good as per atmosphere, it is
+                        very nearby most of the popular places but self location
+                        in a narrow street is not good. Overall it was a good
+                        experience and could recommend.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev what-section-control"
+                aria-label="flip the comment to the left"
+                href="#carouselComments"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="icon-chevron-left what-section-chevron"
+                  aria-hidden="true"
+                >
+                </span>
+              </a>
+              <a
+                class="carousel-control-next what-section-control"
+                aria-label="flip the comment to the right"
+                href="#carouselComments"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="icon-chevrone-right what-section-chevron"
+                  aria-hidden="true"
+                >
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="row">
+          <div class="subscribe">
+            <div class="col-xl-3 newsletter-words">
+              <span class="newsletter-words__subscribe">subscribe to our</span>
+              <h2 class="newsletter-words__title">NEWSLETTER</h2>
+            </div>
+            <form class="col-xl-4 send-form">
+              <input
+                class="send-form__input"
+                type="text"
+                placeholder="Your email address"
+                aria-label="write your email address"
+              />
+              <button
+                class="send-form__button"
+                aria-label="button for send your email address"
+              >
+                <span class="send-form__button-word">Send</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="other-activities">
+      <div class="container">
+        <h2 class="other-activities__title">OTHER ACTIVITIES</h2>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-xl-3">
+            <div class="curious-photo"></div>
+            <span class="card-text">The curious corner of chamarel</span>
+            <button
+              class="main-btn"
+              aria-label="book now the curious corner of chamarel"
+            >
+              Book Now
+            </button>
+          </div>
+          <div class="col-xs-12 col-md-6 col-xl-3">
+            <div class="golf-photo"></div>
+            <span class="card-text">Gymkhana club golf course</span>
+            <button class="main-btn" aria-label="book now golf course">
+              Book Now
+            </button>
+          </div>
+          <div class="col-xs-12 col-md-6 col-xl-3">
+            <div class="falls-photo"></div>
+            <span class="card-text">Tamarind falls hiking trip - full day</span>
+            <button class="main-btn" aria-label="book now hiking trip">
+              Book Now
+            </button>
+          </div>
+          <div class="col-xs-12 col-md-6 col-xl-3">
+            <div class="quest-photo"></div>
+            <span class="card-text">The blue marine discovery quest</span>
+            <button class="main-btn" aria-label="book now discovery quest">
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-section">
+      <div class="container">
+        <ul class="footer-list-wrap">
+          <li class="footer-list-wrap__item logo-item">
+            <a aria-label="best tour plan logo to go to the main page" href="#">
+              <img
+                src="./images/best_tour_plan_logo/best_tour_plan_footer.svg"
+                alt="best tour plan logo"
+                class="logo-icon"
+              />
+            </a>
+          </li>
+          <li class="footer-list-wrap__item">
+            <h3 class="footer-list-wrap__item-ltl-list-title">
+              ALL CATEGORIES
+            </h3>
+            <ul class="footer-list-wrap__item-ltl-list all-categories-position">
+              <li class="footer-list-wrap__item-ltl-list-item">
+                <a href="#" class="footer-link">All Deals</a>
+              </li>
+              <li class="footer-list-wrap__item-ltl-list-item">
+                <a href="#" class="footer-link">Hotels</a>
+              </li>
+              <li class="footer-list-wrap__item-ltl-list-item">
+                <a href="#" class="footer-link">Activities</a>
+              </li>
+              <li class="footer-list-wrap__item-ltl-list-item">
+                <a href="#" class="footer-link">Spa Packages</a>
+              </li>
+              <li class="footer-list-wrap__item-ltl-list-item">
+                <a href="#" class="footer-link">Hotel Day Packages</a>
+              </li>
+              <li class="footer-list-wrap__item-ltl-list-item">
+                <a href="#" class="footer-link">Restaurants</a>
+              </li>
+              <li class="footer-list-wrap__item-ltl-list-item">
+                <a href="#" class="footer-link">Fitness</a>
+              </li>
+              <li class="footer-list-wrap__item-ltl-list-item">
+                <a href="#" class="footer-link">Rodrigues</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-list-wrap__item additional-information">
+            <h3 class="footer-list-wrap__item-ltl-list-title">
+              ADDITIONAL INFORMATION
+            </h3>
+            <ul class="footer-list-wrap__item-ltl-list">
+              <li class="footer-list-wrap__item-ltl-list-item">
+                <a href="#" class="footer-link">About Us</a>
+              </li>
+              <li class="footer-list-wrap__item-ltl-list-item">
+                <a href="#" class="footer-link">Contact Us</a>
+              </li>
+              <li class="footer-list-wrap__item-ltl-list-item">
+                <a href="#" class="footer-link">How does it work?</a>
+              </li>
+              <li class="footer-list-wrap__item-ltl-list-item">
+                <a href="#" class="footer-link">Frequently Asked Questions</a>
+              </li>
+              <li class="footer-list-wrap__item-ltl-list-item">
+                <a href="#" class="footer-link">Deals.mu loyalty program</a>
+              </li>
+              <li class="footer-list-wrap__item-ltl-list-item">
+                <a href="#" class="footer-link">Promote your Business on BTP</a>
+              </li>
+              <li class="footer-list-wrap__item-icons">
+                <h3 class="footer-list-wrap__item-ltl-list-title">
+                  SOCIAL NETWORK
+                </h3>
+                <div class="footer-list-wrap__item-icons-links">
+                  <a
+                    class="footer-icon-position"
+                    href="#"
+                    aria-label="click on the facebook icon"
+                    ><span class="icon-facebook-icon1"></span
+                  ></a>
+                  <a
+                    class="footer-icon-position"
+                    href="#"
+                    aria-label="click on the youtube icon"
+                    ><span class="icon-youtube-icon1"></span
+                  ></a>
+                  <a
+                    class="footer-icon-position"
+                    href="#"
+                    aria-label="click on the instagram icon"
+                    ><span class="icon-instagram-icon1"></span
+                  ></a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-list-wrap__item legal-information">
+            <h3 class="footer-list-wrap__item-ltl-list-title">
+              LEGAL INFORMATION
+            </h3>
+            <ul class="footer-list-wrap__item-ltl-list">
+              <li class="footer-list-wrap__item-ltl-list-item">
+                <a href="#" class="footer-link">Terms & Conditions</a>
+              </li>
+              <li class="footer-list-wrap__item-ltl-list-item">
+                <a href="#" class="footer-link">Disclaimer</a>
+              </li>
+              <li class="footer-list-wrap__item-ltl-list-item">
+                <a href="#" class="footer-link">Cancellation policy</a>
+              </li>
+              <li class="footer-list-wrap__item-ltl-list-item">
+                <a href="#" class="footer-link">Privacy</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="footer-contacts row">
+          <li class="footer-contacts__item col col-lg-6">
+            <h3 class="footer-titles contact-details-position">
+              CONTACT DETAILS
+            </h3>
+            <span class="footer-contacts__item-text">
+              Feel free to contact us by phone, email or by our contact
+              form</span
+            >
+            <div class="footer-contacts__location footer-contacts-icons">
+              <a
+                href="#"
+                aria-label="click on the location button"
+                class="footer-contacts__icon-position"
+                ><span class="icon-location-icon"></span
+              ></a>
+              <span class="footer-contacts__item-text"
+                >9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+                States</span
+              >
+            </div>
+            <div class="footer-contacts__phone footer-contacts-icons">
+              <a
+                href="tel:+152566138"
+                aria-label="call us"
+                class="footer-contacts__icon-position"
+                ><span class="icon-phone-call-footer-icon"></span
+              ></a>
+              <span class="footer-contacts__item-text"
+                >Tel (business hours) : 269 1500 <br />
+                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
+                pm) <br />
+                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</span
+              >
+            </div>
+            <div class="footer-contacts__mail footer-contacts-icons">
+              <a
+                href="mailto:cherly.lawson@example.com"
+                aria-label="send us a message"
+                class="footer-contacts__icon-position"
+                ><span class="icon-e-mail-icon"></span
+              ></a>
+              <span class="footer-contacts__item-text"
+                >cherly.lawson@example.com</span
+              >
+            </div>
+          </li>
+          <li class="footer-contacts__item col col-lg-6">
+            <h3 class="footer-titles">SEND US A MESSAGE</h3>
+            <form class="footer-form">
+              <div class="row footer-form__wrap">
+                <div class="col col-md-6 footer-form__wrap-item">
+                  <input
+                    class="form-item"
+                    name="user_full_name"
+                    aria-label="write your full name"
+                    type="text"
+                    placeholder="Your Full Name*"
+                  />
+                </div>
+                <div class="col col-md-6 footer-form__wrap-item">
+                  <input
+                    class="form-item"
+                    name="user_phone_number"
+                    aria-label="write your phone number"
+                    type="text"
+                    placeholder="Phone Number*"
+                  />
+                </div>
+                <div class="col footer-form__wrap-item">
+                  <textarea
+                    class="form-item form-textarea"
+                    name="user_message"
+                    aria-label="write your message"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="footer-btn-wrap">
+                <button
+                  class="footer-btn"
+                  aria-label="send the entered information"
+                >
+                  Send
+                </button>
+                <span class="footer-btn-wrap__text">* Required Fields</span>
+              </div>
+            </form>
+          </li>
+        </ul>
+        <div class="footer-policy-payment">
+          <div class="footer-policy-payment__wrap">
+            <a class="footer-policy-payment__wrap-text" href="#"
+              ><span>Disclaimer</span></a
+            >
+            <a class="footer-policy-payment__wrap-text" href="#"
+              ><span>Conditions of use</span></a
+            >
+            <a class="footer-policy-payment__wrap-text" href="#"
+              ><span>Cancellation policy</span></a
+            >
+          </div>
+          <a aria-label="go to the payment page" href="#"
+            ><img
+              src="./images/payment/payment_136x22_1x.png"
+              alt="payment icons"
+          /></a>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="

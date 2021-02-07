@@ -121,18 +121,29 @@
   line-height: 18px;
   color: $bkg-tcolor-2;
 }
+.package-details__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: $bkg-tcolor-2;
+}
 .info-card__list-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
 }
-.offer-details__list-text {
+.list-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+.info-card__offer-list-item-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
 }
 @include media-breakpoint-up(xl) {
-  .offer-details__list-text {
+  .info-card__offer-list-item-text {
     font-size: 14px;
     line-height: 18px;
   }
@@ -142,4 +153,147 @@
   font-size: 12px;
   line-height: 16px;
   color: $prime-color;
+}
+.other-packages__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  color: $tcolor-1;
+}
+.hotel-blue-haven-main-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: $bkg-tcolor-2;
+}
+.hotel-blue-haven-txt {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $bkg-tcolor-2;
+}
+@include media-breakpoint-up(lg) {
+  .hotel-blue-haven-txt {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.hotel-information-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: $bkg-tcolor-2;
+}
+.hotel-btn-price__large-numbers {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: $bkg-tcolor-2;
+}
+.main-flash-offer {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+}
+@include media-breakpoint-up(xl) {
+  .deleted-price {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .hotel-blue-haven-txt {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+  }
+}
+.what-people-think__wraper-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  color: $tcolor-1;
+}
+.comment__title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: $prime-color;
+}
+.comment__text {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: $tcolor-2;
+}
+.comment__mega-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: $tcolor-1;
+}
+.newsletter-words__subscribe {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: $bkg-tcolor-2;
+}
+.newsletter-words__title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  color: $bkg-tcolor-2;
+  margin: 0;
+}
+.other-activities__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: $tcolor-2;
+  margin: 0;
+}
+.card-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: $bkg-tcolor-2;
+}
+.footer-list-wrap__item-ltl-list {
+  color: $icons-color;
+}
+.footer-contacts {
+  color: $icons-color;
+}
+.footer-policy-payment__wrap-text {
+  color: $bkg-tcolor-2;
+  font-size: 12px;
+  line-height: 15px;
+}
+.footer-policy-payment__wrap-text:hover,
+.footer-policy-payment__wrap-text:focus {
+  color: $bkg-tcolor-2;
+}
+.footer-list-wrap__item-ltl-list-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+}
+.footer-list-wrap__item-ltl-list-title {
+  color: $bkg-tcolor-2;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+.footer-titles {
+  color: $bkg-tcolor-2;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+.footer-btn-wrap__text {
+  padding-top: 20px;
+}
+@include media-breakpoint-up(xl) {
+  .footer-contacts__item-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }

@@ -1,0 +1,11 @@
+.footer-link {
+  color: $icons-color;
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: $bkg-tcolor-2;
+  text-decoration: none;
+}
+.footer-link:active {
+  color: $prime-color;
+}

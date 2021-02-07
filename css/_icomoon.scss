@@ -22,6 +22,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-vector_1:before {
+  content: "\e919";
+}
+.icon-vector_2:before {
+  content: "\e91a";
+}
 .icon-calendar-icon:before {
   content: "\e905";
 }

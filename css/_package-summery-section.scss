@@ -76,7 +76,15 @@
   background-color: $second-color;
   border-radius: 4px 4px 0px 0px;
 }
+.package-details__header {
+  background-color: $second-color;
+  border-radius: 4px 4px 0px 0px;
+}
 .info-card__title {
+  padding: 16px 24px;
+  margin: 0;
+}
+.package-details__title {
   padding: 16px 24px;
   margin: 0;
 }
@@ -116,7 +124,7 @@
 .second-list-text {
   padding-right: 30px;
 }
-.offer-details__second {
+.offer-details {
   display: flex;
   flex-direction: column;
 }
@@ -124,7 +132,7 @@
   padding-bottom: 34px;
   padding-right: 20px;
 }
-.offer-details__calendar {
+.info-card__offer-list-item-calendar {
   font-size: 16px;
   color: $tcolor-1;
   justify-content: center;
@@ -133,7 +141,7 @@
   left: 0;
   align-self: center;
 }
-.offer-details__list {
+.info-card__offer-list {
   list-style-type: none;
   margin: 0;
   padding: 26px 26px 0;
@@ -141,7 +149,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.offer-details__list-item {
+.info-card__offer-list-item {
   padding-bottom: 18px;
   color: $tcolor-1;
   position: relative;
@@ -150,12 +158,12 @@
   align-items: center;
 }
 @include media-breakpoint-up(sm) {
-  .offer-details__list {
+  .info-card__offer-list {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
   }
-  .offer-details__list-item {
+  .info-card__offer-list-item {
     width: 50%;
   }
   .offer-details__second-t {
@@ -174,7 +182,7 @@
   .info-card__list-item {
     padding-left: 36px;
   }
-  .offer-details__list-item {
+  .info-card__offer-list-item {
     width: 48%;
   }
   .offer-details__second-t {
@@ -185,7 +193,6 @@
   background-color: $bkg-tcolor-2;
   border-radius: 8px;
   padding-bottom: 46px;
-  text-align: center;
 }
 .package-details-main-list {
   list-style-type: none;
@@ -199,7 +206,7 @@
 .package-details__list {
   list-style-type: none;
   margin: 0;
-  padding: 26px 26px 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
 }
@@ -210,6 +217,9 @@
   padding-left: 36px;
   display: flex;
   align-items: center;
+}
+.package-details-main-list__item {
+  padding: 26px 26px 0;
 }
 @include media-breakpoint-up(md) {
   .package-details-main-list {
@@ -230,25 +240,25 @@
   }
   .package-details-main-list__item {
     width: 30%;
+    padding: 0;
   }
   .package-details {
     text-align: start;
   }
   .package-details-main-list {
-    padding: 6px 0 0 24px;
+    padding: 6px 36px 0 24px;
   }
   .line {
     border-bottom: 1px dashed #e0e0e0;
     display: block;
     width: 100%;
     padding-top: 22px;
-    padding-bottom: 32px;
   }
   .second-list-item-col {
-    padding-left: 36px;
+    padding-left: 52px;
   }
   .third-list-item-col {
-    padding-left: 36px;
+    padding-left: 76px;
   }
 }
 @include media-breakpoint-up(xl) {
@@ -256,6 +266,6 @@
     width: 32%;
   }
   .third-list-item-col {
-    padding-left: 68px;
+    padding-left: 96px;
   }
 }
